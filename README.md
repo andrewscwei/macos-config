@@ -1,4 +1,4 @@
-# mac-prests
+# mac-presets
 
 ## Usage
 
