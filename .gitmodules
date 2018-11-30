@@ -1,0 +1,15 @@
+[submodule "vscode"]
+	path = vscode
+	url = https://github.com/andrewscwei/vscode-presets
+[submodule "xcode"]
+	path = xcode
+	url = https://github.com/andrewscwei/xcode-presets
+[submodule "homebrew"]
+	path = homebrew
+	url = https://github.com/andrewscwei/homebrew-presets
+[submodule "whitefox"]
+	path = whitefox
+	url = https://github.com/andrewscwei/whitefox-macos-presets
+[submodule "dz60"]
+	path = dz60
+	url = https://github.com/andrewscwei/dz60-macos-presets
