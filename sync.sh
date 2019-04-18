@@ -11,24 +11,24 @@ echo -e "${COLOR_PURPLE}Exporting VSCode presets... ${COLOR_GREEN}OK${COLOR_RESE
 
 echo
 
-echo -e "Exporting Xcode presets..."
+echo -e "${COLOR_PURPLE}Exporting Xcode presets...${COLOR_RESET}"
 cd xcode
 sh ./export.sh
 git add -A && git commit -m "Update presets" && git push
 cd ..
-echo -e "Exporting Xcode presets... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_PURPLE}Exporting Xcode presets... ${COLOR_GREEN}OK${COLOR_RESET}"
 
 echo
 
-echo -e "Exporting Homebrew presets..."
+echo -e "${COLOR_PURPLE}Exporting Homebrew presets...${COLOR_RESET}"
 cd homebrew
 ./export.sh
 git add -A && git commit -m "Update presets" && git push
 cd ..
-echo -e "Exporting Homebrew presets... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_PURPLE}Exporting Homebrew presets... ${COLOR_GREEN}OK${COLOR_RESET}"
 
 echo
 
-echo -e "Updating workspace..."
+echo -e "${COLOR_PURPLE}Updating workspace...${COLOR_RESET}"
 git add -A && git commit -m "Update presets" && git push
-echo -e "Updating workspace... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_PURPLE}Updating workspace... ${COLOR_GREEN}OK${COLOR_RESET}"
