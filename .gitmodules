@@ -13,3 +13,6 @@
 [submodule "dz60"]
 	path = dz60
 	url = https://github.com/andrewscwei/dz60-macos-presets
+[submodule "android-studio-presets"]
+	path = android-studio-presets
+	url = https://github.com/andrewscwei/android-studio-presets
