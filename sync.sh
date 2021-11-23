@@ -4,13 +4,13 @@ COLOR_PREFIX="\x1b["; COLOR_RESET=$COLOR_PREFIX"0m"; COLOR_BLACK=$COLOR_PREFIX"0
 
 echo -e "${COLOR_PURPLE}Exporting apps presets...${COLOR_RESET}"
 cd apps
-bash ./export.sh
+./export.sh
 cd ..
 echo -e "${COLOR_PURPLE}Exporting apps presets... ${COLOR_GREEN}OK${COLOR_RESET}"
 
 echo -e "${COLOR_PURPLE}Exporting VSCode presets...${COLOR_RESET}"
 cd vscode
-sh ./export.sh
+./export.sh
 git add -A && git commit -m "Update presets" && git push
 cd ..
 echo -e "${COLOR_PURPLE}Exporting VSCode presets... ${COLOR_GREEN}OK${COLOR_RESET}"
@@ -19,7 +19,7 @@ echo
 
 echo -e "${COLOR_PURPLE}Exporting Xcode presets...${COLOR_RESET}"
 cd xcode
-sh ./export.sh
+./export.sh
 git add -A && git commit -m "Update presets" && git push
 cd ..
 echo -e "${COLOR_PURPLE}Exporting Xcode presets... ${COLOR_GREEN}OK${COLOR_RESET}"
