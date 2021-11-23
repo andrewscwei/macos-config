@@ -4,7 +4,7 @@ COLOR_PREFIX="\x1b["; COLOR_RESET=$COLOR_PREFIX"0m"; COLOR_BLACK=$COLOR_PREFIX"0
 
 echo -e "${COLOR_PURPLE}Exporting apps presets...${COLOR_RESET}"
 cd apps
-sh ./export.sh
+bash ./export.sh
 cd ..
 echo -e "${COLOR_PURPLE}Exporting apps presets... ${COLOR_GREEN}OK${COLOR_RESET}"
 
