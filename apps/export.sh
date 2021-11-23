@@ -34,7 +34,7 @@ function export_divvy() {
 }
 
 function export_musescore3() {
-  local res=$(export_file "$HOME/Application Support/MuseScore/MuseScore3/shortcuts.xml" "${CWD}/musescore3")
+  local res=$(export_file "$HOME/Library/Application Support/MuseScore/MuseScore3/shortcuts.xml" "${CWD}/musescore3")
   echo -e "Exporting ${COLOR_CYAN}$res${COLOR_RESET}... OK"
 }
 

@@ -34,7 +34,7 @@ function import_divvy() {
 }
 
 function export_musescore3() {
-  local res=$(import_file "${CWD}/musescore3/shortcuts.xml" "$HOME/Application Support/MuseScore/MuseScore3")
+  local res=$(import_file "${CWD}/musescore3/shortcuts.xml" "$HOME/Library/Application Support/MuseScore/MuseScore3")
   echo -e "Importing ${COLOR_CYAN}$res${COLOR_RESET}... OK"
 }
 
