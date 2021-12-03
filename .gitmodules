@@ -7,12 +7,6 @@
 [submodule "homebrew"]
 	path = homebrew
 	url = https://github.com/andrewscwei/homebrew-config
-[submodule "whitefox"]
-	path = whitefox
-	url = https://github.com/andrewscwei/whitefox-config
-[submodule "dz60"]
-	path = dz60
-	url = https://github.com/andrewscwei/dz60-config
 [submodule "android-studio"]
 	path = android-studio
 	url = https://github.com/andrewscwei/android-studio-config
