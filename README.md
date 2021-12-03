@@ -1,11 +1,11 @@
-# mac-presets
+# Configuration for macOS
 
-## Syncing All Presets
+## Syncing All Configs
 
 ```sh
-$ sh ./sync.sh
+$ ./sync.sh
 ```
 
-## Syncing Individual Presets
+## Syncing Individual Configs
 
 See individual directories.

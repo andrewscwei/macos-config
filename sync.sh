@@ -8,39 +8,39 @@ cd dotfiles
 cd ..
 echo -e "${COLOR_PURPLE}Exporting dot files... ${COLOR_GREEN}OK${COLOR_RESET}"
 
-echo -e "${COLOR_PURPLE}Exporting apps presets...${COLOR_RESET}"
+echo -e "${COLOR_PURPLE}Exporting app configs...${COLOR_RESET}"
 cd apps
 ./export.sh
 cd ..
-echo -e "${COLOR_PURPLE}Exporting apps presets... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_PURPLE}Exporting app configs... ${COLOR_GREEN}OK${COLOR_RESET}"
 
-echo -e "${COLOR_PURPLE}Exporting VSCode presets...${COLOR_RESET}"
+echo -e "${COLOR_PURPLE}Exporting VSCode config...${COLOR_RESET}"
 cd vscode
 ./export.sh
-git add -A && git commit -m "Update presets" && git push
+git add -A && git commit -m "Update config" && git push
 cd ..
-echo -e "${COLOR_PURPLE}Exporting VSCode presets... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_PURPLE}Exporting VSCode config... ${COLOR_GREEN}OK${COLOR_RESET}"
 
 echo
 
-echo -e "${COLOR_PURPLE}Exporting Xcode presets...${COLOR_RESET}"
+echo -e "${COLOR_PURPLE}Exporting Xcode config...${COLOR_RESET}"
 cd xcode
 ./export.sh
-git add -A && git commit -m "Update presets" && git push
+git add -A && git commit -m "Update config" && git push
 cd ..
-echo -e "${COLOR_PURPLE}Exporting Xcode presets... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_PURPLE}Exporting Xcode config... ${COLOR_GREEN}OK${COLOR_RESET}"
 
 echo
 
-echo -e "${COLOR_PURPLE}Exporting Homebrew presets...${COLOR_RESET}"
+echo -e "${COLOR_PURPLE}Exporting Homebrew config...${COLOR_RESET}"
 cd homebrew
 ./export.sh
-git add -A && git commit -m "Update presets" && git push
+git add -A && git commit -m "Update config" && git push
 cd ..
-echo -e "${COLOR_PURPLE}Exporting Homebrew presets... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_PURPLE}Exporting Homebrew config... ${COLOR_GREEN}OK${COLOR_RESET}"
 
 echo
 
 echo -e "${COLOR_PURPLE}Updating workspace...${COLOR_RESET}"
-git add -A && git commit -m "Update presets" && git push
+git add -A && git commit -m "Update config" && git push
 echo -e "${COLOR_PURPLE}Updating workspace... ${COLOR_GREEN}OK${COLOR_RESET}"

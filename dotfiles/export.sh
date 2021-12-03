@@ -29,7 +29,7 @@ function export_files() {
 }
 
 function main() {
-  echo -e "Exporting ${COLOR_CYAN}$(export_file ${HOME}/.zshrc ${CWD})${COLOR_RESET}... OK"
+  echo -e "Exporting ${COLOR_CYAN}$(export_file ${HOME}/.zshrc ${CWD}/files)${COLOR_RESET}... OK"
 }
 
 main
