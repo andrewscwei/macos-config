@@ -49,20 +49,20 @@ HIST_STAMPS="yyyy-mm-dd"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# User configuration
+NVM_AUTO_USE="true"
+fpath+=/opt/homebrew/share/zsh/site-functions
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*) Custom
 # plugins may be added to ~/.oh-my-zsh/custom/plugins/ Example format: plugins=(rails git textmate
 # ruby lighthouse) Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
   zsh-nvm
-  zsh-completions
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-fpath+=/opt/homebrew/share/zsh/site-functions
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -82,9 +82,6 @@ else
   export EDITOR='nano'
 fi
 
-# zsh-nvm
-export NVM_AUTO_USE="true"
-
 # zsh-completions
 autoload -U compinit && compinit
 
@@ -101,6 +98,9 @@ alias vpm=". ~/.vpm/vpm.sh"
 # Python
 alias python=/opt/homebrew/bin/python3
 alias pip=/opt/homebrew/bin/pip3
+
+# OpenJDK
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
