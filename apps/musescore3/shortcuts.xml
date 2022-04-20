@@ -27,10 +27,6 @@
     </SC>
   <SC>
     <key>file-export</key>
-    <seq>F5</seq>
-    </SC>
-  <SC>
-    <key>file-part-export</key>
     </SC>
   <SC>
     <key>file-import-pdf</key>
@@ -150,35 +146,27 @@
     </SC>
   <SC>
     <key>interval-2</key>
-    <seq>Alt+@</seq>
     </SC>
   <SC>
     <key>interval-3</key>
-    <seq>Alt+#</seq>
     </SC>
   <SC>
     <key>interval-4</key>
-    <seq>Alt+$</seq>
     </SC>
   <SC>
     <key>interval-5</key>
-    <seq>Alt+%</seq>
     </SC>
   <SC>
     <key>interval-6</key>
-    <seq>Alt+^</seq>
     </SC>
   <SC>
     <key>interval-7</key>
-    <seq>Alt+&amp;</seq>
     </SC>
   <SC>
     <key>interval-8</key>
-    <seq>Alt+*</seq>
     </SC>
   <SC>
     <key>interval-9</key>
-    <seq>Alt+(</seq>
     </SC>
   <SC>
     <key>note-a</key>
@@ -271,7 +259,6 @@
   <SC>
     <key>rest</key>
     <seq>0</seq>
-    <seq>\,</seq>
     </SC>
   <SC>
     <key>realtime-advance</key>
@@ -317,6 +304,9 @@
     <key>reset-style</key>
     </SC>
   <SC>
+    <key>reset-text-style-overrides</key>
+    </SC>
+  <SC>
     <key>reset-groupings</key>
     </SC>
   <SC>
@@ -330,6 +320,9 @@
   <SC>
     <key>pitch-up-diatonic</key>
     <seq>Alt+Shift+Up</seq>
+    </SC>
+  <SC>
+    <key>pitch-up-diatonic-alterations</key>
     </SC>
   <SC>
     <key>pitch-up-octave</key>
@@ -354,6 +347,9 @@
   <SC>
     <key>pitch-down-diatonic</key>
     <seq>Alt+Shift+Down</seq>
+    </SC>
+  <SC>
+    <key>pitch-down-diatonic-alterations</key>
     </SC>
   <SC>
     <key>pitch-down-octave</key>
@@ -381,6 +377,7 @@
     </SC>
   <SC>
     <key>get-location</key>
+    <seq>Shift+L</seq>
     </SC>
   <SC>
     <key>palette-search</key>
@@ -414,6 +411,15 @@
     <seq>Ctrl+Left</seq>
     </SC>
   <SC>
+    <key>prev-system</key>
+    </SC>
+  <SC>
+    <key>prev-frame</key>
+    </SC>
+  <SC>
+    <key>prev-section</key>
+    </SC>
+  <SC>
     <key>prev-track</key>
     </SC>
   <SC>
@@ -423,6 +429,24 @@
   <SC>
     <key>next-measure</key>
     <seq>Ctrl+Right</seq>
+    </SC>
+  <SC>
+    <key>next-system</key>
+    </SC>
+  <SC>
+    <key>next-frame</key>
+    </SC>
+  <SC>
+    <key>next-section</key>
+    </SC>
+  <SC>
+    <key>top-staff</key>
+    </SC>
+  <SC>
+    <key>playback-position</key>
+    </SC>
+  <SC>
+    <key>empty-trailing-measure</key>
     </SC>
   <SC>
     <key>next-track</key>
@@ -652,6 +676,15 @@
     <key>pad-note-128</key>
     </SC>
   <SC>
+    <key>pad-note-256</key>
+    </SC>
+  <SC>
+    <key>pad-note-512</key>
+    </SC>
+  <SC>
+    <key>pad-note-1024</key>
+    </SC>
+  <SC>
     <key>pad-note-increase</key>
     </SC>
   <SC>
@@ -691,6 +724,21 @@
     </SC>
   <SC>
     <key>flat2</key>
+    </SC>
+  <SC>
+    <key>sharp2-post</key>
+    </SC>
+  <SC>
+    <key>sharp-post</key>
+    </SC>
+  <SC>
+    <key>nat-post</key>
+    </SC>
+  <SC>
+    <key>flat-post</key>
+    </SC>
+  <SC>
+    <key>flat2-post</key>
     </SC>
   <SC>
     <key>acciaccatura</key>
@@ -738,11 +786,9 @@
     </SC>
   <SC>
     <key>beam-start</key>
-    <seq>Alt+;</seq>
     </SC>
   <SC>
     <key>beam-mid</key>
-    <seq>Alt+J</seq>
     </SC>
   <SC>
     <key>no-beam</key>
@@ -765,7 +811,6 @@
   <SC>
     <key>toggle-palette</key>
     <seq>F9</seq>
-    <seq>Ctrl+0</seq>
     </SC>
   <SC>
     <key>toggle-playpanel</key>
@@ -851,7 +896,6 @@
     </SC>
   <SC>
     <key>subtitle-text</key>
-    <seq>Alt+T</seq>
     </SC>
   <SC>
     <key>composer-text</key>
@@ -864,7 +908,7 @@
     </SC>
   <SC>
     <key>chord-text</key>
-    <seq>Alt+K</seq>
+    <seq>Ctrl+K</seq>
     </SC>
   <SC>
     <key>roman-numeral-text</key>
@@ -881,7 +925,6 @@
     </SC>
   <SC>
     <key>fingering-text</key>
-    <seq>Alt+F</seq>
     </SC>
   <SC>
     <key>sticking-text</key>
@@ -984,12 +1027,10 @@
     </SC>
   <SC>
     <key>section-break</key>
-    <seq>Alt+Return</seq>
     </SC>
   <SC>
     <key>edit-element</key>
     <seq>Alt+Shift+E</seq>
-    <seq>F2</seq>
     </SC>
   <SC>
     <key>reset</key>
@@ -1000,8 +1041,6 @@
     </SC>
   <SC>
     <key>reset-stretch</key>
-    <seq>Alt+{</seq>
-    <seq>Alt+}</seq>
     </SC>
   <SC>
     <key>show-invisible</key>
@@ -1056,7 +1095,10 @@
     </SC>
   <SC>
     <key>zoom100</key>
-    <seq>Ctrl+1</seq>
+    <seq>Ctrl+0</seq>
+    </SC>
+  <SC>
+    <key>zoom-page-width</key>
     </SC>
   <SC>
     <key>mirror-note</key>
@@ -1147,7 +1189,6 @@
   <SC>
     <key>toggle-piano</key>
     <seq>P</seq>
-    <seq>Ctrl+Shift+Y</seq>
     </SC>
   <SC>
     <key>toggle-scorecmp-tool</key>
@@ -1163,7 +1204,6 @@
     </SC>
   <SC>
     <key>page-settings</key>
-    <seq>Ctrl+Shift+P</seq>
     </SC>
   <SC>
     <key>album</key>
@@ -1181,6 +1221,7 @@
     </SC>
   <SC>
     <key>plugin-creator</key>
+    <seq>Ctrl+Shift+P</seq>
     </SC>
   <SC>
     <key>plugin-manager</key>
@@ -1188,7 +1229,6 @@
   <SC>
     <key>inspector</key>
     <seq>F8</seq>
-    <seq>Ctrl+Alt+0</seq>
     </SC>
   <SC>
     <key>resource-manager</key>
@@ -1207,6 +1247,15 @@
     </SC>
   <SC>
     <key>countin</key>
+    </SC>
+  <SC>
+    <key>playback-speed-increase</key>
+    </SC>
+  <SC>
+    <key>playback-speed-decrease</key>
+    </SC>
+  <SC>
+    <key>playback-speed-reset</key>
     </SC>
   <SC>
     <key>figured-bass</key>
@@ -1312,6 +1361,15 @@
     <key>pad-note-128-TAB</key>
     <seq>Shift+0</seq>
     <seq>NumPad+0</seq>
+    </SC>
+  <SC>
+    <key>pad-note-256-TAB</key>
+    </SC>
+  <SC>
+    <key>pad-note-512-TAB</key>
+    </SC>
+  <SC>
+    <key>pad-note-1024-TAB</key>
     </SC>
   <SC>
     <key>pad-note-increase-TAB</key>
@@ -1461,6 +1519,9 @@
     <seq>(</seq>
     </SC>
   <SC>
+    <key>add-braces</key>
+    </SC>
+  <SC>
     <key>toggle-mmrest</key>
     <seq>M</seq>
     </SC>
@@ -1489,6 +1550,9 @@
     </SC>
   <SC>
     <key>explode</key>
+    </SC>
+  <SC>
+    <key>realize-chord-symbols</key>
     </SC>
   <SC>
     <key>implode</key>
@@ -1543,5 +1607,21 @@
     </SC>
   <SC>
     <key>leave-feedback</key>
+    </SC>
+  <SC>
+    <key>zoom-in-horiz-pre</key>
+    <seq>Ctrl++</seq>
+    </SC>
+  <SC>
+    <key>zoom-out-horiz-pre</key>
+    <seq>Ctrl+-</seq>
+    </SC>
+  <SC>
+    <key>zoom-in-vert-pre</key>
+    <seq>Ctrl+Shift++</seq>
+    </SC>
+  <SC>
+    <key>zoom-out-vert-pre</key>
+    <seq>Ctrl+Shift+-</seq>
     </SC>
   </Shortcuts>

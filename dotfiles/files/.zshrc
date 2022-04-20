@@ -95,9 +95,10 @@ prompt pure
 #
 # Example aliases alias zshconfig="mate ~/.zshrc" alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vpm=". ~/.vpm/vpm.sh"
-# Python
-alias python=/opt/homebrew/bin/python3
-alias pip=/opt/homebrew/bin/pip3
+
+# # Python
+# alias python=/opt/homebrew/bin/python3
+# alias pip=/opt/homebrew/bin/pip3
 
 # OpenJDK
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
@@ -115,3 +116,7 @@ source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completi
 
 # rbenv
 eval "$(rbenv init - zsh)"
+
+# pyenv
+export PATH=$(pyenv root)/shims:$PATH
+eval "$(pyenv init -)"
