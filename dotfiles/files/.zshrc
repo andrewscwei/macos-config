@@ -64,14 +64,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
@@ -95,10 +90,6 @@ prompt pure
 #
 # Example aliases alias zshconfig="mate ~/.zshrc" alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vpm=". ~/.vpm/vpm.sh"
-
-# # Python
-# alias python=/opt/homebrew/bin/python3
-# alias pip=/opt/homebrew/bin/pip3
 
 # OpenJDK
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

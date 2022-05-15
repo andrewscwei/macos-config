@@ -1,11 +1,11 @@
 # Configuration for macOS
 
-## Syncing All Configs
+## Exporting All Configs
 
 ```sh
-$ ./sync.sh
+$ ./export.sh
 ```
 
-## Syncing Individual Configs
+## Exporting/Importing Individual Configs
 
 See individual directories.

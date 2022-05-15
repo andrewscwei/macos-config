@@ -1,0 +1,161 @@
+{
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "workbench.iconTheme": "vs-minimal",
+  "workbench.startupEditor": "newUntitledFile",
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.renderWhitespace": "boundary",
+  "files.trimTrailingWhitespace": true,
+  "editor.rulers": [
+    100
+  ],
+  "explorer.confirmDelete": false,
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.cache": true,
+    "**/.classpath": true,
+    "**/.data": true,
+    "**/.DS_Store": true,
+    "**/.factorypath": true,
+    "**/.hg": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.svn": true,
+    "**/build/": true,
+    "**/CVS": true,
+    "**/dist/": true,
+    "**/node_modules/": true,
+    "package-lock.json": true
+  },
+  "files.associations": {
+    "*.env.*": "dotenv",
+    "dockerfile.*": "dockerfile",
+    ".stylelintrc": "json",
+    ".tslintrc": "json",
+    "*.geojson": "json",
+    "*.strings": "swift",
+    "*.liquid": "html",
+    ".env": "shellscript",
+    "Fastfile": "ruby",
+    "Appfile": "ruby",
+    "Matchfile": "ruby"
+  },
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "explorer.confirmDragAndDrop": false,
+  "search.exclude": {
+    "**/bower_components": true,
+    "**/node_modules": true,
+    "package-lock.json": true,
+    "yarn.lock": true
+  },
+  "gitlens.codeLens.enabled": false,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "breadcrumbs.filePath": "on",
+  "breadcrumbs.symbolPath": "on",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terraform.codelens.enabled": false,
+  "terraform.indexing": {
+    "enabled": false,
+    "liveIndexing": true,
+    "delay": 500,
+    "exclude": [
+      ".terraform/**/*",
+      "**/.terraform/**/*"
+    ]
+  },
+  "workbench.statusBar.feedback.visible": false,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "git.autofetch": true,
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?-",
+  "javascript.validate.enable": false,
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "git-commit",
+    "go",
+    "handlebars",
+    "haskell",
+    "jade",
+    "java",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pug",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "text",
+    "yaml",
+    "yml",
+    "json"
+  ],
+  "editor.dragAndDrop": false,
+  "eslint.format.enable": true,
+  "terraform.languageServer": {
+    "external": true,
+    "args": [
+      "serve"
+    ]
+  },
+  "cSpell.enableFiletypes": [
+    "swift"
+  ],
+  "cSpell.userWords": [
+    "Keychain",
+    "UUID",
+    "configurables",
+    "dealloc",
+    "lightbox",
+    "uncache"
+  ],
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "editor.wordWrapColumn": 100,
+  "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "workbench.editor.untitled.hint": "hidden",
+  "editor.minimap.maxColumn": 100,
+  "html.format.wrapLineLength": 100,
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.copyWithSyntaxHighlighting": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "prettier.arrowParens": "avoid",
+  "emmet.showExpandedAbbreviation": "never",
+  "editor.smoothScrolling": true,
+  "javascript.suggest.names": false,
+  "redhat.telemetry.enabled": false,
+  "editor.quickSuggestionsDelay": 500,
+  "editor.hover.delay": 800,
+  "git.pullTags": false,
+  "python.linting.pylintEnabled": true
+}
