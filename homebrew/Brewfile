@@ -22,24 +22,6 @@ brew "glib"
 brew "python@3.10"
 # Tool to obtain certs from Let's Encrypt and autoenable HTTPS
 brew "certbot"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
-# OpenType text shaping engine
-brew "harfbuzz"
-# Low-level access to audio, keyboard, mouse, joystick, and graphics
-brew "sdl2"
-# H.264/AVC encoder
-brew "x264"
-# High-performance, asynchronous messaging library
-brew "zeromq"
-# Scaling, colorspace conversion, and dithering library
-brew "zimg"
-# Core component of the AcoustID project (Audio fingerprinting)
-brew "chromaprint"
 # Statistics utility to count lines of code
 brew "cloc"
 # Library for USB device access
@@ -62,6 +44,22 @@ brew "wangle"
 brew "fbthrift"
 # Thrift functions for querying information from a service
 brew "fb303"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Low-level access to audio, keyboard, mouse, joystick, and graphics
+brew "sdl2"
+# H.264/AVC encoder
+brew "x264"
+# High-performance, asynchronous messaging library
+brew "zeromq"
+# Scaling, colorspace conversion, and dithering library
+brew "zimg"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Toolkit for image loading and pixel buffer manipulation
@@ -110,16 +108,10 @@ brew "kompose"
 brew "kubernetes-cli"
 # Sophisticated file transfer program
 brew "lftp"
-# C library SSHv1/SSHv2 client and server protocols
-brew "libssh"
-# YAML Parser
-brew "libyaml"
 # Run a Kubernetes cluster locally
 brew "minikube"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
-# Platform built on V8 to build network applications
-brew "node@14"
 # MongoDB Shell to connect, configure, query, and work with your MongoDB database
 brew "mongosh"
 # Netwide Assembler (NASM) is an 80x86 assembler
@@ -196,8 +188,6 @@ cask "ngrok"
 cask "postman"
 # G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
 cask "prusaslicer"
-# Web browser focusing on security
-cask "tor-browser"
 # File transfer application
 cask "transmit"
 # Open-source code editor
