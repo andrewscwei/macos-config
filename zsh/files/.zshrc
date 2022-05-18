@@ -5,6 +5,14 @@ fpath+=/opt/homebrew/share/zsh/site-functions
 autoload -U promptinit; promptinit
 prompt pure
 
+# Search through history with up/down arrows
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
+
 # zsh-nvm
 export NVM_AUTO_USE="true"
 source ~/.zsh/zsh-nvm/zsh-nvm.plugin.zsh

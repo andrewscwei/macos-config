@@ -53,6 +53,7 @@ function main() {
 
   # Install plugins
   git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh/zsh-nvm
+  git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh/zsh-completions
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
   install_from_dir "files"
