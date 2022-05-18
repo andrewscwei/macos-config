@@ -51,6 +51,10 @@ function main() {
     exit 1
   fi
 
+  # Install plugins
+  git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh/zsh-nvm
+  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
   install_from_dir "files"
   ret=$?
 
