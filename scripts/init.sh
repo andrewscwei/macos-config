@@ -20,7 +20,7 @@ COLOR_LIGHT_GRAY=$COLOR_PREFIX"0;37m"
 # @param $1 - The command name.
 function assert_command() {
   if ! type "$1" > /dev/null 2>&1; then
-    echo -e "${COLOR_RED}You need ${COLOR_CYAN}$1${COLOR_RED} to run the script"
+    echo -e "${COLOR_RED}Asserting command exists... ERR: You need ${COLOR_CYAN}$1${COLOR_RED} to run the script${COLOR_RESET}"
     exit 1
   fi
 }
@@ -30,12 +30,12 @@ function assert_command() {
 # @param $1 - The directory path.
 function assert_dir() {
   if [ -z "$1" ]; then
-    echo -e "${COLOR_RED}You must provide a directory name${COLOR_RESET}"
+    echo -e "${COLOR_RED}Asserting directory exists... ERR: You must provide a directory name${COLOR_RESET}"
     exit 1
   fi
 
   if [ ! -d "$1" ]; then
-    echo -e >&2 "${COLOR_RED}Directory ${COLOR_CYAN}$1${COLOR_RED} not found${COLOR_RESET}"
+    echo -e >&2 "${COLOR_RED}Asserting directory exists... ERR: Directory ${COLOR_CYAN}$1${COLOR_RED} not found${COLOR_RESET}"
     exit 1
   fi
 }
@@ -49,6 +49,22 @@ function ensure_dir() {
   fi
 }
 
+# Exports a file to a target path.
+#
+# @param $1 - The file name.
+# @param $2 - The directory of the file.
+# @param $3 - The destination directory to export the file to.
+function export_file() {
+  local file_name=$1
+  local from_dir=$2
+  local to_dir=$3
+
+  ensure_dir ${to_dir}
+  cp -rf "${from_dir}/${file_name}" "${to_dir}/${file_name}"
+
+  echo -e "Exporting ${COLOR_CYAN}${file_name}${COLOR_RESET}... OK"
+}
+
 # Copies all files from a directory to another directory. The destination directory will be
 # overwritten.
 #
@@ -59,19 +75,16 @@ function export_dir() {
   local to_dir=$2
 
   if [ -z "$(ls -A $from_dir)" ]; then
-    echo -e "${COLOR_CYAN}No files to export${COLOR_RESET}"
+    echo -e "${COLOR_YELLOW}Exporting directory ${COLOR_CYAN}${from_dir}${COLOR_YELLOW}... SKIP: No files to export${COLOR_RESET}"
     return
   fi
 
   rm -rf $to_dir
-  mkdir -p $to_dir
+  ensure_dir $to_dir
 
   for file in $from_dir/*; do
-    local f=${file##*/}
-
-    echo -e "Exporting ${COLOR_CYAN}$f${COLOR_RESET}..."
-
-    cp -rf "$file" "$to_dir/$f"
+    local file_name=${file##*/}
+    export_file $file_name $from_dir $to_dir
   done
 }
 
@@ -89,12 +102,14 @@ function install_remote_file() {
 
   assert_dir $to_dir
 
-  echo -e "Installing $file_name..."
+  echo -e "Installing ${COLOR_CYAN}${file_name}${COLOR_RESET}..."
 
   curl --compressed -q -s "${remote_dir}/${file_name}" -o "${to_dir}/${file_name}" || {
-    echo -e "${COLOR_RED}Failed to download from ${COLOR_CYAN}${file_name}${COLOR_RESET}"
+    echo -e "${COLOR_RED}Installing ${COLOR_CYAN}${file_name}${COLOR_RED}... ERR${COLOR_RESET}"
     return 1
   }
+
+  echo -e "${COLOR_GREEN}Installing ${COLOR_CYAN}$file_name${COLOR_GREEN}... OK${COLOR_RESET}"
 }
 
 # Downloads a directory remotely to a target path.

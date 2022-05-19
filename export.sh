@@ -1,46 +1,45 @@
 #!/bin/bash
 
-COLOR_PREFIX="\x1b["; COLOR_RESET=$COLOR_PREFIX"0m"; COLOR_BLACK=$COLOR_PREFIX"0;30m"; COLOR_RED=$COLOR_PREFIX"0;31m"; COLOR_GREEN=$COLOR_PREFIX"0;32m"; COLOR_ORANGE=$COLOR_PREFIX"0;33m"; COLOR_BLUE=$COLOR_PREFIX"0;34m"; COLOR_PURPLE=$COLOR_PREFIX"0;35m"; COLOR_CYAN=$COLOR_PREFIX"0;36m"; COLOR_LIGHT_GRAY=$COLOR_PREFIX"0;37m"
+CWD=$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)
 
-echo -e "${COLOR_PURPLE}Exporting dot files...${COLOR_RESET}"
-cd dotfiles
+source $CWD/scripts/init.sh
+
+echo -e "Exporting ZSH config..."
+cd zsh
 ./export.sh
 cd ..
-echo -e "${COLOR_PURPLE}Exporting dot files... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_GREEN}Exporting ZSH config... OK${COLOR_RESET}"
 
-echo -e "${COLOR_PURPLE}Exporting app configs...${COLOR_RESET}"
+echo -e "Exporting app configs..."
 cd apps
 ./export.sh
 cd ..
-echo -e "${COLOR_PURPLE}Exporting app configs... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_GREEN}Exporting app configs... OK${COLOR_RESET}"
 
-echo -e "${COLOR_PURPLE}Exporting VSCode config...${COLOR_RESET}"
+echo -e "Exporting VSCode config..."
 cd vscode
 ./export.sh
-git add -A && git commit -m "Update config" && git push
 cd ..
-echo -e "${COLOR_PURPLE}Exporting VSCode config... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_GREEN}Exporting VSCode config... OK${COLOR_RESET}"
 
 echo
 
-echo -e "${COLOR_PURPLE}Exporting Xcode config...${COLOR_RESET}"
+echo -e "Exporting Xcode config..."
 cd xcode
 ./export.sh
-git add -A && git commit -m "Update config" && git push
 cd ..
-echo -e "${COLOR_PURPLE}Exporting Xcode config... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_GREEN}Exporting Xcode config... OK${COLOR_RESET}"
 
 echo
 
-echo -e "${COLOR_PURPLE}Exporting Homebrew config...${COLOR_RESET}"
+echo -e "Exporting Homebrew config..."
 cd homebrew
 ./export.sh
-git add -A && git commit -m "Update config" && git push
 cd ..
-echo -e "${COLOR_PURPLE}Exporting Homebrew config... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_GREEN}Exporting Homebrew config... OK${COLOR_RESET}"
 
 echo
 
-echo -e "${COLOR_PURPLE}Updating workspace...${COLOR_RESET}"
+echo -e "Syncing with remote repo..."
 git add -A && git commit -m "Update config" && git push
-echo -e "${COLOR_PURPLE}Updating workspace... ${COLOR_GREEN}OK${COLOR_RESET}"
+echo -e "${COLOR_GREEN}Syncing with remote repo... OK${COLOR_RESET}"

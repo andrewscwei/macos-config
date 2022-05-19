@@ -17,6 +17,7 @@ function install_from_dir() {
   local to_dir=$(get_install_dir)/$dir_name
   local ref_dir=$CWD/files/$dir_name
 
+  ensure_dir $to_dir
   install_remote_dir $remote_dir $to_dir $ref_dir
 }
 

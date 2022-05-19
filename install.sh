@@ -2,29 +2,53 @@
 
 { # This ensures the entire script is downloaded
 
-# Config.
-SRC="https://raw.githubusercontent.com/andrewscwei/macos-config"
-COLOR_PREFIX="\x1b["; COLOR_RESET=$COLOR_PREFIX"0m"; COLOR_BLACK=$COLOR_PREFIX"0;30m"; COLOR_RED=$COLOR_PREFIX"0;31m"; COLOR_GREEN=$COLOR_PREFIX"0;32m"; COLOR_ORANGE=$COLOR_PREFIX"0;33m"; COLOR_BLUE=$COLOR_PREFIX"0;34m"; COLOR_PURPLE=$COLOR_PREFIX"0;35m"; COLOR_CYAN=$COLOR_PREFIX"0;36m"; COLOR_LIGHT_GRAY=$COLOR_PREFIX"0;37m"
+CWD=$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)
 
-function read_password() {
-   echo -e "Enter password for ${COLOR_CYAN}${USER}${COLOR_RESET}: "
-   read -s PASSWORD
-   echo ""
+source $CWD/scripts/init.sh
 
-   if [[ -z "$PASSWORD" ]]; then
-      printf '%s\n' "A password is required..."
-      read_password
-   fi
-}
+echo -e "Installing Homebrew config..."
+cd homebrew
+./install.sh
+cd ..
+echo -e "${COLOR_GREEN}Installing Homebrew config... OK${COLOR_RESET}"
 
-function main() {
-  # Install Homebrew
-  echo $PASSWORD | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  # rm -rf $(brew --repo homebrew/core)
-  # brew tap homebrew/core
-}
+echo
 
-read_password
-main
+echo -e "Installing ZSH config..."
+cd zsh
+./install.sh
+cd ..
+echo -e "${COLOR_GREEN}Installing ZSH config... OK${COLOR_RESET}"
+
+echo
+
+echo -e "Installing app configs..."
+cd apps
+./install.sh
+cd ..
+echo -e "${COLOR_GREEN}Installing app configs... OK${COLOR_RESET}"
+
+echo
+
+echo -e "Installing VSCode config..."
+cd vscode
+./install.sh
+cd ..
+echo -e "${COLOR_GREEN}Installing VSCode config... OK${COLOR_RESET}"
+
+echo
+
+echo -e "Installing Xcode config..."
+cd xcode
+./install.sh
+cd ..
+echo -e "${COLOR_GREEN}Installing Xcode config... OK${COLOR_RESET}"
+
+echo
+
+echo -e "Syncing with remote repo..."
+git add -A && git commit -m "Update config" && git push
+echo -e "${COLOR_GREEN}Syncing with remote repo... OK${COLOR_RESET}"
+
 
 } # This ensures the entire script is downloaded
