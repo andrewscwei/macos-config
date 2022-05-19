@@ -6,10 +6,10 @@ Custom Xcode configuration—simply run the install script and you're good to go
 
 ### Installing Config
 
-Install via Wget:
+Install via cURL:
 
 ```sh
-$ curl -o- -s https://raw.githubusercontent.com/andrewscwei/xcode-config/master/install.sh | bash
+$ curl -o- -s https://raw.githubusercontent.com/andrewscwei/macos-config/master/xcode/install.sh | bash
 ```
 
 Relaunch Xcode and go to **Preferences**:
@@ -20,7 +20,5 @@ Relaunch Xcode and go to **Preferences**:
 ### Exporting Existing Config
 
 ```sh
-$ git clone https://github.com/andrewscwei/xcode-config
-$ cd xcode-config
 $ ./export.sh
 ```

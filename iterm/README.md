@@ -4,7 +4,7 @@
 
 ## Fonts
 
-1. In `fonts/`, double-click any font and select **Install Font**
+1. In `files/fonts/`, double-click any font and select **Install Font**
 2. In iTerm, go to **Preferences** > **Profiles** > **Text**, then change the font
 
 ## Preferences Setup
@@ -82,7 +82,7 @@
 1. General
     1. **Working Directory**: Set to desired default working directory
 2. Colors
-    > In `colors/`, double-click any `.itermcolors` file to add a color preset to iTerm
+    > In `files/colors/`, double-click any `.itermcolors` file to add a color preset to iTerm
     1. **Color Presets...**: Select desired color preset
 3. Text
     1. **Cursor**: Box, [x] Blinking cursor
