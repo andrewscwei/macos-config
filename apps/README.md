@@ -1,3 +1,17 @@
-# App Presets
+# App Configurations
 
-Some app config can be imported using the `import.sh` script, while some must be manually imported in the app itself.
+## Usage
+
+### Installing Configs
+
+Install via cURL:
+
+```sh
+$ curl -o- -s https://raw.githubusercontent.com/andrewscwei/macos-config/master/apps/install.sh | bash
+```
+
+### Exporting Existing Configs
+
+```sh
+$ ./export.sh
+```

@@ -13,6 +13,7 @@ function export_themes() {
 function export_key_bindings() {
   export_dir ${FROM_DIR}/KeyBindings ${TO_DIR}/KeyBindings
   rm -rf ${TO_DIR}/KeyBindings/Default.idekeybindings
+  echo -e "${COLOR_YELLOW}Exporting Default.idekeybindings... REVERTED${COLOR_RESET}"
 }
 
 export_themes
