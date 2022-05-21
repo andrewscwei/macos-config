@@ -14,4 +14,3 @@ function ensure_brew() {
 
 ensure_brew
 brew bundle install --file=$CWD/Brewfile
-
