@@ -4,6 +4,14 @@ Custom Xcode configuration—simply run the install script and you're good to go
 
 ## Usage
 
+### Download Xcode
+
+Download/Update Xcode from the Apple Developer Portal (more reliable compared to downloading from the macOS App Store):
+
+1. Sign in to https://developer.apple.com/
+2. Go to **Downloads** > **Applications**
+3. Find **Xcode** and download it
+
 ### Installing Config
 
 Install via cURL:
