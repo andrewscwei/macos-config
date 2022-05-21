@@ -2,6 +2,7 @@
 
 # Exit if any of the intermediate steps fail.
 set -e
+shopt -s dotglob
 
 # Colors.
 COLOR_PREFIX="\x1b["
