@@ -19,8 +19,8 @@ function read_password() {
 
 function ensure_brew() {
   if ! type "brew" > /dev/null 2>&1; then
-    read_password
-    echo $PASSWORD | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    #read_password
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     # rm -rf $(brew --repo homebrew/core)
     # brew tap homebrew/core
