@@ -85,7 +85,7 @@
     > In `files/colors/`, double-click any `.itermcolors` file to add a color preset to iTerm
     1. **Color Presets...**: Select desired color preset
 3. Text
-    1. **Cursor**: Box, [x] Blinking cursor
+    1. **Cursor**: Underline, [x] Blinking cursor
     2. **Text Rendering**
         1. [x] Draw bold text in bold font
         2. [ ] Blinking text
