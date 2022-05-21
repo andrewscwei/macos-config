@@ -1,8 +1,8 @@
 #!/bin/bash
 
 CWD=$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)
-FROM_DIR="$HOME/Library/Application Support/Code/User"
-TO_DIR="$CWD/files"
+FROM_DIR="${HOME}/Library/Application Support/Code/User"
+TO_DIR="${CWD}/files"
 
 source $CWD/../scripts/init.sh
 

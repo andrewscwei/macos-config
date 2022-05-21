@@ -8,12 +8,12 @@ SRC="https://raw.githubusercontent.com/andrewscwei/macos-config/master/vscode"
 source $CWD/../scripts/init.sh
 
 function get_install_dir() {
-  printf %s "${INSTALL_PATH:-"$HOME/Library/Application\ Support/Code/User"}"
+  echo ${INSTALL_PATH:-${HOME}/Library/Application Support/Code/User}
 }
 
 function install_settings() {
-  install_remote_file "settings.json" "${SRC}/files" $(get_install_dir)
-  install_remote_file "keybindings.json" "${SRC}/files" $(get_install_dir)
+  install_remote_file "settings.json" "${SRC}/files" "$(get_install_dir)"
+  install_remote_file "keybindings.json" "${SRC}/files" "$(get_install_dir)"
 }
 
 function install_extensions() {

@@ -45,7 +45,7 @@ function assert_dir() {
 # @param $1 - The directory to ensure the existence of.
 function ensure_dir() {
   if [ ! -d "$1" ]; then
-    mkdir -p $1
+    mkdir -p "$1"
   fi
 }
 
@@ -59,7 +59,7 @@ function export_file() {
   local from_dir=$2
   local to_dir=$3
 
-  ensure_dir ${to_dir}
+  ensure_dir "${to_dir}"
   cp -rf "${from_dir}/${file_name}" "${to_dir}/${file_name}"
 
   echo -e "Exporting ${COLOR_CYAN}${file_name}${COLOR_RESET}... OK"
@@ -74,17 +74,17 @@ function export_dir() {
   local from_dir=$1
   local to_dir=$2
 
-  if [ -z "$(ls -A $from_dir)" ]; then
+  if [ -z "$(ls -A ${from_dir})" ]; then
     echo -e "${COLOR_YELLOW}Exporting directory ${COLOR_CYAN}${from_dir}${COLOR_YELLOW}... SKIP: No files to export${COLOR_RESET}"
     return
   fi
 
-  rm -rf $to_dir
-  ensure_dir $to_dir
+  rm -rf "${to_dir}"
+  ensure_dir "${to_dir}"
 
-  for file in $from_dir/*; do
+  for file in "${from_dir}"/*; do
     local file_name=${file##*/}
-    export_file $file_name $from_dir $to_dir
+    export_file "${file_name}" "${from_dir}" "${to_dir}"
   done
 }
 
@@ -100,7 +100,7 @@ function install_remote_file() {
   local remote_dir=$2
   local to_dir=$3
 
-  assert_dir $to_dir
+  assert_dir "${to_dir}"
 
   echo -e "Installing ${COLOR_CYAN}${file_name}${COLOR_RESET}..."
 
@@ -124,11 +124,11 @@ function install_remote_dir() {
   local ref_dir=$3
 
   assert_command "curl"
-  assert_dir $ref_dir
-  assert_dir $to_dir
+  assert_dir "${ref_dir}"
+  assert_dir "${to_dir}"
 
-  for file in "$ref_dir"/*; do
+  for file in "${ref_dir}"/*; do
     local file_name=${file##*/}
-    install_remote_file $file_name $remote_dir $to_dir
+    install_remote_file "${file_name}" "${remote_dir}" "${to_dir}"
   done
 }
