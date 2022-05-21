@@ -14,13 +14,13 @@
 ### General
 
 1. Startup
-    1. **Window restoration policy**: Only Restore Hotkey Window
+    1. **Window restoration policy**: Use System Window Restoration Setting
     2. [ ] Open profiles window
 2. Closing
     1. [ ] Quit when all windows are closed
     2. [ ] Confirm closing multiple sessions
     3. [ ] Confirm "Quit iTerm2 (⌘Q)
-3. Magic* (leave default)*
+3. Magic*
 4. Services*
 5. Selection
     1. [x] Copy to pasteboard on selection
