@@ -61,13 +61,13 @@ cask "iterm2"
 cask "ngrok"
 cask "postman"
 cask "prusaslicer"
+cask "rectangle-pro"
 cask "transmit"
 cask "visual-studio-code"
 mas "Affinity Designer", id: 824171161
 mas "Affinity Photo", id: 824183456
 mas "Affinity Publisher", id: 881418622
 mas "Bitwarden", id: 1352778147
-mas "Divvy", id: 413857545
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Kaleidoscope", id: 1575557335
