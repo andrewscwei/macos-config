@@ -12,12 +12,11 @@ function get_install_dir() {
 }
 
 function main() {
-  assert_command "curl"
   assert_command "git"
 
-  git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh/zsh-nvm
-  git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh/zsh-completions
-  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+  rm -rf ~/.zsh/zsh-nvm && git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh/zsh-nvm
+  rm -rf ~/.zsh/zsh-completions && git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh/zsh-completions
+  rm -rf ~/.zsh/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
   install_remote_dir "${SRC}/files" "$(get_install_dir)" "${CWD}/files"
 
