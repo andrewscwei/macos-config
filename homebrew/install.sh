@@ -28,6 +28,6 @@ function ensure_brew() {
 }
 
 ensure_brew
-brew bundle install --file=Brewfile
+brew bundle install --file=$CWD/Brewfile
 
 } # This ensures the entire script is downloaded
