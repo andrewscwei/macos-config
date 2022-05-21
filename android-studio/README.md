@@ -4,8 +4,8 @@ Personal Android Studio config for macOS.
 
 ## Importing Config
 
-Android Studio -> File -> Manage IDE SEttings -> Import Settings
+Android Studio -> File -> Manage IDE Settings -> Import Settings
 
-## Exporting Existing Config
+## Exporting Config
 
 Android Studio -> File -> Manage IDE Settings -> Export Settings

@@ -1,15 +1,21 @@
 # Configuration for macOS
 
+## Usage
+
+```sh
+git clone https://github.com/andrewscwei/macos-config && cd macos-config 
+```
+
 ## Installing All Configs
 
 ```sh
-$ curl -o- -s https://raw.githubusercontent.com/andrewscwei/macos-config/master/install.sh | bash
+./install.sh
 ```
 
 ## Exporting All Configs
 
 ```sh
-$ ./export.sh
+./export.sh
 ```
 
 ## Exporting/Importing Individual Configs

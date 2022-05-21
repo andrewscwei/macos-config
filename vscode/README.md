@@ -9,11 +9,11 @@ Custom VSCode configuration (macOS only)—simply run the install script and you
 Install via cURL:
 
 ```sh
-$ curl -o- -s https://raw.githubusercontent.com/andrewscwei/macos-config/master/vscode/install.sh | bash
+curl -o- -s https://raw.githubusercontent.com/andrewscwei/macos-config/master/vscode/install.sh | bash
 ```
 
-### Exporting Existing Config
+### Exporting Config
 
 ```sh
-$ ./export.sh
+./export.sh
 ```

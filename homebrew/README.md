@@ -1,17 +1,13 @@
 # Homebrew Configuration
 
-## Usage
+## Installing Config
 
 ```sh
-# Export existing config
-$ ./export.sh
-
-# Install settings from repo
-$ ./install.sh
+./install.sh
 ```
 
-Install via cURL:
+## Exporting Config
 
 ```sh
-$ curl -o- -s https://raw.githubusercontent.com/andrewscwei/macos-config/master/homebrew/install.sh | bash
+./export.sh
 ```

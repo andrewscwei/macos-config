@@ -7,11 +7,11 @@
 Install via cURL:
 
 ```sh
-$ curl -o- -s https://raw.githubusercontent.com/andrewscwei/macos-config/master/apps/install.sh | bash
+curl -o- -s https://raw.githubusercontent.com/andrewscwei/macos-config/master/apps/install.sh | bash
 ```
 
-### Exporting Existing Configs
+### Exporting Configs
 
 ```sh
-$ ./export.sh
+./export.sh
 ```
