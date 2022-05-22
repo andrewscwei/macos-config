@@ -1,4 +1,4 @@
-# Rectangle Pro Config for macOS
+# Rectangle Pro
 
 ## Usage
 

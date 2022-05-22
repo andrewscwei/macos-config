@@ -1,4 +1,4 @@
-# Xcode Configuration
+# Xcode
 
 Custom Xcode configuration—simply run the install script and you're good to go.
 

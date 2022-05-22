@@ -18,7 +18,7 @@ echo -e "${COLOR_GREEN}Installing ZSH config... OK${COLOR_RESET}"
 
 echo
 
-echo -e "Installing app configs..."
+echo -e "Installing MuseScore 3 config..."
 $CWD/apps/install.sh
 echo -e "${COLOR_GREEN}Installing app configs... OK${COLOR_RESET}"
 

@@ -1,4 +1,4 @@
-# ZSH Config
+# ZSH
 
 This directory contains personal ZSH configurations.
 

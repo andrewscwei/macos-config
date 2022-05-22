@@ -1,4 +1,4 @@
-# iTerm Configuration
+# iTerm2
 
 > Build 3.4.15
 

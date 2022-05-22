@@ -1,4 +1,4 @@
-# Android Studio Configuration for macOS
+# Android Studio
 
 Personal Android Studio config for macOS.
 

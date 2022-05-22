@@ -1,4 +1,4 @@
-# Homebrew Configuration
+# Homebrew
 
 ## Installing Config
 

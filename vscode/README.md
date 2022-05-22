@@ -1,4 +1,4 @@
-# Visual Studio Code Configuration for macOS
+# Visual Studio Code
 
 Custom VSCode configuration (macOS only)—simply run the install script and you're good to go.
 
