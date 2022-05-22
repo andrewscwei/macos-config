@@ -17,7 +17,13 @@ Download/Update Xcode from the Apple Developer Portal (more reliable compared to
 Install via cURL:
 
 ```sh
-curl -o- -s https://raw.githubusercontent.com/andrewscwei/macos-config/master/xcode/install.sh | bash
+$ curl -o- -s https://raw.githubusercontent.com/andrewscwei/macos-config/master/xcode/install.sh | bash
+```
+
+Install locally:
+
+```sh
+$ ./install.sh
 ```
 
 Relaunch Xcode and go to **Preferences**:
@@ -28,5 +34,5 @@ Relaunch Xcode and go to **Preferences**:
 ### Exporting Config
 
 ```sh
-./export.sh
+$ ./export.sh
 ```

@@ -83,7 +83,7 @@
       "int" : 2
     },
     "iCloudSync" : {
-      "int" : 0
+      "int" : 1
     },
     "ignoredSnapAreas" : {
       "int" : 0
@@ -309,7 +309,7 @@
     }
   },
   "shortcuts" : {
-    "almostMaximize" : {
+    "center" : {
       "keyCode" : 3,
       "modifierFlags" : 262144
     },
@@ -365,6 +365,10 @@
       "keyCode" : 126,
       "modifierFlags" : 917504
     },
+    "restore" : {
+      "keyCode" : 15,
+      "modifierFlags" : 262144
+    },
     "rightHalf" : {
       "keyCode" : 38,
       "modifierFlags" : 917504
@@ -378,6 +382,6 @@
       "modifierFlags" : 786432
     }
   },
-  "timestamp" : 674873815.67549503,
+  "timestamp" : 674932126.07142699,
   "version" : "112"
 }

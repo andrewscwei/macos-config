@@ -2,14 +2,24 @@
 
 This directory contains personal ZSH configurations.
 
-## Installing Config
+## Usage
+
+### Installing Config
+
+Install via cURL:
 
 ```sh
-curl -o- -s https://raw.githubusercontent.com/andrewscwei/macos-config/master/zsh/install.sh | bash
+$ curl -o- -s https://raw.githubusercontent.com/andrewscwei/macos-config/master/zsh/install.sh | bash
 ```
 
-## Exporting Config
+Install locally:
 
 ```sh
-./export.sh
+$ ./install.sh
+```
+
+### Exporting Config
+
+```sh
+$ ./export.sh
 ```

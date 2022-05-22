@@ -1,13 +1,15 @@
 # Homebrew
 
-## Installing Config
+## Usage
+
+### Installing Config
 
 ```sh
-./install.sh
+$ ./install.sh
 ```
 
-## Exporting Config
+### Exporting Config
 
 ```sh
-./export.sh
+$ ./export.sh
 ```
