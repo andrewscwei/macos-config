@@ -4,7 +4,7 @@ CWD=$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)
 FROM_DIR="${HOME}/Library/Application Support/Code/User"
 TO_DIR="${CWD}/files"
 
-source $CWD/../scripts/init.sh
+source "${CWD}/../scripts/init.sh"
 
 echo -e "Exporting ${COLOR_CYAN}settings.json${COLOR_RESET}..."
 cp -rf "${FROM_DIR}/settings.json" "${TO_DIR}/settings.json"

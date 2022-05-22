@@ -4,7 +4,7 @@ CWD=$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)
 FROM_DIR="$HOME/Library/Developer/Xcode/UserData"
 TO_DIR="$CWD/files"
 
-source $CWD/../scripts/init.sh
+source "${CWD}/../scripts/init.sh"
 
 function export_themes() {
   export_dir ${FROM_DIR}/FontAndColorThemes ${TO_DIR}/FontAndColorThemes

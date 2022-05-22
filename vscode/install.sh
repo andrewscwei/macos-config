@@ -5,7 +5,7 @@
 CWD=$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)
 SRC="https://raw.githubusercontent.com/andrewscwei/macos-config/master/vscode"
 
-source $CWD/../scripts/init.sh
+source "${CWD}/../scripts/init.sh"
 
 function get_install_dir() {
   echo ${INSTALL_PATH:-${HOME}/Library/Application Support/Code/User}
