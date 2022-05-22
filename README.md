@@ -3,7 +3,7 @@
 ## Usage
 
 ```sh
-git clone https://github.com/andrewscwei/macos-config && cd macos-config
+$ git clone https://github.com/andrewscwei/macos-config && cd macos-config
 ```
 
 ### Setting Up on a New Mac
