@@ -351,11 +351,11 @@
     },
     "maximize" : {
       "keyCode" : 46,
-      "modifierFlags" : 786432
+      "modifierFlags" : 262144
     },
     "maximizeHeight" : {
       "keyCode" : 46,
-      "modifierFlags" : 917504
+      "modifierFlags" : 393216
     },
     "nextDisplay" : {
       "keyCode" : 125,
@@ -364,10 +364,6 @@
     "previousDisplay" : {
       "keyCode" : 126,
       "modifierFlags" : 917504
-    },
-    "restore" : {
-      "keyCode" : 15,
-      "modifierFlags" : 786432
     },
     "rightHalf" : {
       "keyCode" : 38,
@@ -382,6 +378,6 @@
       "modifierFlags" : 786432
     }
   },
-  "timestamp" : 675297795.25293195,
+  "timestamp" : 675298085.46828103,
   "version" : "112"
 }
