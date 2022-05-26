@@ -894,5 +894,15 @@
         "key": "f12",
         "command": "-editor.gotoNextSymbolFromResult",
         "when": "hasSymbols"
+    },
+    {
+        "key": "shift+cmd+a",
+        "command": "editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "-editor.action.selectHighlights",
+        "when": "editorFocus"
     }
 ]

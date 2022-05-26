@@ -68,7 +68,7 @@
       "float" : 0
     },
     "gestures" : {
-
+      "string" : "[35,{\"flags\":0,\"trail\":0}]"
     },
     "helperRelaunch" : {
       "int" : 3
@@ -101,7 +101,7 @@
 
     },
     "manualSpecs" : {
-
+      "string" : "[{\"shortcut\":{\"keyCode\":3,\"modifierFlags\":262144},\"display\":-3,\"id\":15,\"h\":\"768\",\"w\":\"1024\",\"name\":\"Focus\",\"loc\":0}]"
     },
     "maximizeAcrossDisplays" : {
       "int" : 0
@@ -310,8 +310,8 @@
   },
   "shortcuts" : {
     "center" : {
-      "keyCode" : 3,
-      "modifierFlags" : 262144
+      "keyCode" : 8,
+      "modifierFlags" : 786432
     },
     "centerHalf" : {
       "keyCode" : 5,
@@ -351,11 +351,11 @@
     },
     "maximize" : {
       "keyCode" : 46,
-      "modifierFlags" : 262144
+      "modifierFlags" : 786432
     },
     "maximizeHeight" : {
       "keyCode" : 46,
-      "modifierFlags" : 393216
+      "modifierFlags" : 917504
     },
     "nextDisplay" : {
       "keyCode" : 125,
@@ -367,7 +367,7 @@
     },
     "restore" : {
       "keyCode" : 15,
-      "modifierFlags" : 262144
+      "modifierFlags" : 786432
     },
     "rightHalf" : {
       "keyCode" : 38,
@@ -382,6 +382,6 @@
       "modifierFlags" : 786432
     }
   },
-  "timestamp" : 674932126.07142699,
+  "timestamp" : 675297795.25293195,
   "version" : "112"
 }
