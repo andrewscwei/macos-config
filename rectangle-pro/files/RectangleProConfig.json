@@ -101,7 +101,7 @@
 
     },
     "manualSpecs" : {
-      "string" : "[{\"shortcut\":{\"keyCode\":3,\"modifierFlags\":262144},\"display\":-3,\"id\":15,\"h\":\"768\",\"w\":\"1024\",\"name\":\"Focus\",\"loc\":0}]"
+      "string" : "[{\"shortcut\":{\"keyCode\":3,\"modifierFlags\":262144},\"display\":-3,\"id\":15,\"h\":\"800\",\"w\":\"1400\",\"name\":\"Focus\",\"loc\":0}]"
     },
     "maximizeAcrossDisplays" : {
       "int" : 0
@@ -378,6 +378,6 @@
       "modifierFlags" : 786432
     }
   },
-  "timestamp" : 675298085.46828103,
+  "timestamp" : 675309110.93860602,
   "version" : "112"
 }
