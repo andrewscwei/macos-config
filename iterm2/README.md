@@ -96,7 +96,9 @@
     1. **Settings for New Windows**
         1. **Columns**: 160
         2. **Rows**: 50
-5. Terminal*
+5. Terminal
+    1. **Scrollback Buffer**
+        1. **Scrollback lines**: [x] Unlimited scrollback
 6. Session*
 7. Keys
     1. General
