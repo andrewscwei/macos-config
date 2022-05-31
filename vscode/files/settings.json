@@ -157,5 +157,6 @@
   "editor.quickSuggestionsDelay": 500,
   "editor.hover.delay": 800,
   "git.pullTags": false,
-  "python.linting.pylintEnabled": true
+  "python.linting.pylintEnabled": true,
+  "security.workspace.trust.untrustedFiles": "open"
 }
