@@ -29,7 +29,7 @@
     4. [x] Triple-click selects entire wrapped lines
     5. [ ] Double-click performs smart seletion
     6. [x] Automatically enter copy mode on Shift+Arrow key with selection
-    7. **Characters considered part of a word**: /-+\~_.
+    7. **Characters considered part of a word**: -~_
 6. Window
     1. [ ] Smart window placement
     2. [x] Adjust window when changing font size
