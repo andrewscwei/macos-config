@@ -296,7 +296,7 @@
       "int" : 0
     },
     "windowSnapping" : {
-      "int" : 0
+      "int" : 2
     },
     "windowStopVelocity" : {
       "float" : 3
@@ -358,12 +358,12 @@
       "modifierFlags" : 393216
     },
     "nextDisplay" : {
-      "keyCode" : 125,
-      "modifierFlags" : 917504
+      "keyCode" : 124,
+      "modifierFlags" : 786432
     },
     "previousDisplay" : {
-      "keyCode" : 126,
-      "modifierFlags" : 917504
+      "keyCode" : 123,
+      "modifierFlags" : 786432
     },
     "rightHalf" : {
       "keyCode" : 38,
@@ -378,6 +378,6 @@
       "modifierFlags" : 786432
     }
   },
-  "timestamp" : 675309110.93860602,
-  "version" : "112"
+  "timestamp" : 676580345.820544,
+  "version" : "113"
 }
