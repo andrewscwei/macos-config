@@ -1,0 +1,24 @@
+[user]
+	name = Andrew Wei
+	email = andrewscwei@gmail.com
+[diff]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+[includeIf "gitdir:~/Developer/ghozt/"]
+	path = ~/.gitconfig.ghozt
+[includeIf "gitdir:~/Developer/sybl/"]
+	path = ~/.gitconfig.sybl
+[includeIf "gitdir:~/Developer/verb/"]
+	path = ~/.gitconfig.verb
+[includeIf "gitdir:~/Developer/pine/"]
+  path = ~/.gitconfig.pine

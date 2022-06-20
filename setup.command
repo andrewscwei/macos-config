@@ -12,6 +12,12 @@ echo -e "${COLOR_GREEN}Installing Homebrew config... OK${COLOR_RESET}"
 
 echo
 
+echo -e "Installing Git config..."
+bash "${CWD}/git/install.sh"
+echo -e "${COLOR_GREEN}Installing Git config... OK${COLOR_RESET}"
+
+echo
+
 echo -e "Installing ZSH config..."
 bash "${CWD}/zsh/install.sh"
 echo -e "${COLOR_GREEN}Installing ZSH config... OK${COLOR_RESET}"
