@@ -20,5 +20,3 @@
 	path = ~/.gitconfig.sybl
 [includeIf "gitdir:~/Developer/verb/"]
 	path = ~/.gitconfig.verb
-[includeIf "gitdir:~/Developer/pine/"]
-  path = ~/.gitconfig.pine
