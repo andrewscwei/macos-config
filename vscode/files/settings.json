@@ -7,7 +7,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
-  "diffEditor.ignoreTrimWhitespace": false,
   "editor.renderWhitespace": "boundary",
   "files.trimTrailingWhitespace": true,
   "editor.rulers": [
@@ -158,5 +157,6 @@
   "editor.hover.delay": 800,
   "git.pullTags": false,
   "python.linting.pylintEnabled": true,
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "diffEditor.ignoreTrimWhitespace": false
 }
