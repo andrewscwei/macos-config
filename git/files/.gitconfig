@@ -22,3 +22,5 @@
 	path = ~/.gitconfig.verb
 [includeIf "gitdir:~/Developer/pine/"]
   path = ~/.gitconfig.pine
+[includeIf "gitdir:~/Developer/pine/"]
+  path = ~/.gitconfig.pine
