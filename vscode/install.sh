@@ -12,6 +12,9 @@ function get_install_dir() {
 }
 
 function install_settings() {
+  local install_dir="$(get_install_dir)"
+
+  ensure_dir "${install_dir}"
   install_remote_file "settings.json" "${SRC}/files" "$(get_install_dir)"
   install_remote_file "keybindings.json" "${SRC}/files" "$(get_install_dir)"
 }
