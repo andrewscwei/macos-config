@@ -2,9 +2,7 @@
 
 Custom VSCode configuration (macOS only)—simply run the install script and you're good to go.
 
-## Usage
-
-### Installing Config
+## Importing Config
 
 Install via cURL:
 
@@ -18,7 +16,7 @@ Install locally:
 $ ./install.sh
 ```
 
-### Exporting Config
+## Exporting Config
 
 ```sh
 $ ./export.sh

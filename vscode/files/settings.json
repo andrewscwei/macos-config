@@ -41,7 +41,8 @@
     ".env": "shellscript",
     "Fastfile": "ruby",
     "Appfile": "ruby",
-    "Matchfile": "ruby"
+    "Matchfile": "ruby",
+    "*.region": "html"
   },
   "javascript.implicitProjectConfig.experimentalDecorators": true,
   "explorer.confirmDragAndDrop": false,

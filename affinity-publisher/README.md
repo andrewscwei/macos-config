@@ -1,9 +1,9 @@
 # Affinity Publisher
 
-## Export Keyboard Shortcuts
+## Importing Config
 
-**Affinity Publisher** > **Preferences...** > **Keyboard Shortcuts** > *Save*
+Affinity Publisher > Preferences... > Keyboard Shortcuts > Load
 
-## Import Keyboard Shortcuts
+## Exporting Config
 
-**Affinity Publisher** > **Preferences...** > **Keyboard Shortcuts** > *Load*
+Affinity Publisher > Preferences... > Keyboard Shortcuts > Save

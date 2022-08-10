@@ -1,6 +1,6 @@
 # MuseScore 3
 
-## Installing Config
+## Importing Config
 
 Install via cURL:
 

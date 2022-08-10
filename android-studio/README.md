@@ -2,11 +2,11 @@
 
 Personal Android Studio config for macOS.
 
-## Download Android Studio
+## Installing Android Studio
 
 Download Android Studio from its official website: https://developer.android.com/studio. Ensure that you download the correct version for your platform (especially for M1 Macs).
 
-## Installing Config
+## Importing Config
 
 Android Studio -> File -> Manage IDE Settings -> Import Settings
 

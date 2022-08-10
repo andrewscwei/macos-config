@@ -1,9 +1,9 @@
 # Affinity Designer
 
-## Export Keyboard Shortcuts
+## Importing Config
 
-**Affinity Deisnger** > **Preferences...** > **Keyboard Shortcuts** > *Save*
+Affinity Deisnger > Preferences... > Keyboard Shortcuts > Load
 
-## Import Keyboard Shortcuts
+## Exporting Config
 
-**Affinity Deisnger** > **Preferences...** > **Keyboard Shortcuts** > *Load*
+Affinity Deisnger > Preferences... > Keyboard Shortcuts > Save

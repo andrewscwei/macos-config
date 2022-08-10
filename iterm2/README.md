@@ -2,12 +2,12 @@
 
 > Build 3.4.15
 
-## Fonts
+## Importing Fonts
 
 1. In `files/fonts/`, double-click any font and select **Install Font**
 2. In iTerm, go to **Preferences** > **Profiles** > **Text**, then change the font
 
-## Preferences Setup
+## Configuring Preferences
 
 * leave default
 

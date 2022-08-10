@@ -1,14 +1,12 @@
 # Git
 
-## Usage
-
-### Installing Config
+## Installing Config
 
 ```sh
 $ ./install.sh
 ```
 
-### Exporting Config
+## Exporting Config
 
 ```sh
 $ ./export.sh

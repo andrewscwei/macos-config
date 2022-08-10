@@ -4,10 +4,6 @@ CWD=$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)
 
 source "${CWD}/scripts/init.sh"
 
-echo -e "Exporting Git config..."
-bash "${CWD}/git/export.sh"
-echo -e "${COLOR_GREEN}Exporting Git config... OK${COLOR_RESET}"
-
 echo -e "Exporting ZSH config..."
 bash "${CWD}/zsh/export.sh"
 echo -e "${COLOR_GREEN}Exporting ZSH config... OK${COLOR_RESET}"

@@ -2,9 +2,7 @@
 
 This directory contains personal ZSH configurations.
 
-## Usage
-
-### Installing Config
+## Importing Config
 
 Install via cURL:
 
@@ -18,7 +16,7 @@ Install locally:
 $ ./install.sh
 ```
 
-### Exporting Config
+## Exporting Config
 
 ```sh
 $ ./export.sh

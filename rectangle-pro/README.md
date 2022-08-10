@@ -1,8 +1,6 @@
 # Rectangle Pro
 
-## Usage
-
-## Installing Config
+## Importing Config
 
 Rectangle Pro -> Settings -> Import Config -> `files/RectangleProConfig.json`
 

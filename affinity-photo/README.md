@@ -1,9 +1,9 @@
 # Affinity Photo
 
-## Export Keyboard Shortcuts
+## Importing Config
 
-**Affinity Photo** > **Preferences...** > **Keyboard Shortcuts** > *Save*
+Affinity Photo > Preferences... > Keyboard Shortcuts > Load
 
-## Import Keyboard Shortcuts
+## Exporting Config
 
-**Affinity Photo** > **Preferences...** > **Keyboard Shortcuts** > *Load*
+Affinity Photo > Preferences... > Keyboard Shortcuts > Save

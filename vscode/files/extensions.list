@@ -1,11 +1,13 @@
 bierner.markdown-preview-github-styles
 DotJoshJohnson.xml
 eamodio.gitlens
+EditorConfig.EditorConfig
 Equinusocio.vsc-community-material-theme
 eriklynd.json-tools
 firefox-devtools.vscode-firefox-debug
 GitHub.codespaces
 GraphQL.vscode-graphql
+GraphQL.vscode-graphql-syntax
 hashicorp.terraform
 idleberg.applescript
 letrieu.expand-region
@@ -17,6 +19,7 @@ ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
 ms-vscode-remote.remote-containers
+ms-vscode.makefile-tools
 redhat.vscode-yaml
 ryu1kn.partial-diff
 stkb.rewrap

@@ -2,9 +2,7 @@
 
 Custom Xcode configuration—simply run the install script and you're good to go.
 
-## Usage
-
-### Download Xcode
+## Installing Xcode
 
 Download/Update Xcode from the Apple Developer Portal (more reliable compared to downloading from the macOS App Store):
 
@@ -12,7 +10,7 @@ Download/Update Xcode from the Apple Developer Portal (more reliable compared to
 2. Go to **Downloads** > **Applications**
 3. Find **Xcode** and download it
 
-### Installing Config
+## Importing Config
 
 Install via cURL:
 
@@ -31,7 +29,7 @@ Relaunch Xcode and go to **Preferences**:
 1. Go to **Key Bindings** and change **Key Binding Set** to *Custom*
 2. Go to **Fonts and Colors** and select your favorite theme
 
-### Exporting Config
+## Exporting Config
 
 ```sh
 $ ./export.sh
