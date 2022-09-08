@@ -1,4 +1,5 @@
 bierner.markdown-preview-github-styles
+dbaeumer.vscode-eslint
 DotJoshJohnson.xml
 eamodio.gitlens
 EditorConfig.EditorConfig
@@ -6,6 +7,7 @@ Equinusocio.vsc-community-material-theme
 eriklynd.json-tools
 firefox-devtools.vscode-firefox-debug
 GitHub.codespaces
+GitHub.vscode-pull-request-github
 GraphQL.vscode-graphql
 GraphQL.vscode-graphql-syntax
 hashicorp.terraform
@@ -13,6 +15,7 @@ idleberg.applescript
 letrieu.expand-region
 mf.vscode-styled-components
 ms-azuretools.vscode-docker
+ms-kubernetes-tools.vscode-kubernetes-tools
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
