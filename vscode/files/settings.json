@@ -1,7 +1,6 @@
 {
   "gitlens.advanced.messages": {
-    "suppressLineUncommittedWarning": true,
-    "suppressShowKeyBindingsNotice": true
+    "suppressLineUncommittedWarning": true
   },
   "workbench.iconTheme": "vs-minimal",
   "workbench.startupEditor": "newUntitledFile",
@@ -44,7 +43,6 @@
     "Matchfile": "ruby",
     "*.region": "html"
   },
-  "javascript.implicitProjectConfig.experimentalDecorators": true,
   "explorer.confirmDragAndDrop": false,
   "search.exclude": {
     "**/bower_components": true,
@@ -59,19 +57,6 @@
   "breadcrumbs.filePath": "on",
   "breadcrumbs.symbolPath": "on",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "terraform.codelens.enabled": false,
-  "terraform.indexing": {
-    "enabled": false,
-    "liveIndexing": true,
-    "delay": 500,
-    "exclude": [
-      ".terraform/**/*",
-      "**/.terraform/**/*"
-    ]
-  },
-  "workbench.statusBar.feedback.visible": false,
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
   "git.autofetch": true,
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?-",
   "javascript.validate.enable": false,
@@ -105,12 +90,6 @@
   ],
   "editor.dragAndDrop": false,
   "eslint.format.enable": true,
-  "terraform.languageServer": {
-    "external": true,
-    "args": [
-      "serve"
-    ]
-  },
   "cSpell.enableFiletypes": [
     "swift"
   ],
@@ -139,7 +118,7 @@
   },
   "workbench.editor.untitled.hint": "hidden",
   "editor.minimap.maxColumn": 100,
-  "html.format.wrapLineLength": 100,
+  "html.format.wrapLineLength": 0,
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.gotoLocation.multipleImplementations": "goto",
@@ -159,5 +138,25 @@
   "git.pullTags": false,
   "python.linting.pylintEnabled": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.autoIndent": "advanced",
+  "githubPullRequests.pullBranch": "never",
+  "githubPullRequests.createOnPublishBranch": "never",
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.persistentSessionScrollback": 1000,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "html.completion.attributeDefaultValue": "singlequotes",
+  "html.format.extraLiners": "",
+  "html.format.indentInnerHtml": true,
+  "vs-kubernetes": {
+    "vscode-kubernetes.minikube-path.mac": "/Users/mu/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+  }
 }
