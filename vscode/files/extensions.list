@@ -1,5 +1,6 @@
 bierner.markdown-preview-github-styles
-cpylua.language-postcss
+clinyong.vscode-css-modules
+csstools.postcss
 dbaeumer.vscode-eslint
 DotJoshJohnson.xml
 eamodio.gitlens
@@ -14,6 +15,7 @@ hashicorp.terraform
 letrieu.expand-region
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
+ms-python.isort
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
