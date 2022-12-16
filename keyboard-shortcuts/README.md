@@ -53,14 +53,14 @@ To disable a keyboard shortcut, assign it to the zero-width space character `\U2
 
 ## Key Codes
 
-|Key        |Code    |Key        |Code    |
-|-----------|--------|-----------|--------|
-|Delete     |`\U007F`|Ctrl       |`^`     |
-|Backspace  |`\U0008`|Shift      |`$`     |
-|Tab        |`\U0009`|Option     |`~`     |
-|Escape     |`\U001B`|Command    |`@`     |
-|Enter      |`\U000A`|Numpad     |`#`     |
-|Up Arrow   |`\UF700`|F1         |`\UF704`|
-|Down Arrow |`\UF701`|F2         |`\UF705`|
-|Left Arrow |`\UF702`|F3         |`\UF706`|
-|Right Arrow|`\UF703`|...        |...     |
+|Key        |Code    |Key        |Code    |Key        |Code    |
+|-----------|--------|-----------|--------|-----------|--------|
+|Delete     |`\U007F`|Ctrl       |`^`     |F5         |`\UF708`|
+|Backspace  |`\U0008`|Shift      |`$`     |F6         |`\UF709`|
+|Tab        |`\U0009`|Option     |`~`     |F7         |`\UF70A`|
+|Escape     |`\U001B`|Command    |`@`     |F8         |`\UF70B`|
+|Enter      |`\U000A`|Numpad     |`#`     |F9         |`\UF70C`|
+|Up Arrow   |`\UF700`|F1         |`\UF704`|F10        |`\UF70D`|
+|Down Arrow |`\UF701`|F2         |`\UF705`|F11        |`\UF70E`|
+|Left Arrow |`\UF702`|F3         |`\UF706`|F12        |`\UF70F`|
+|Right Arrow|`\UF703`|F4         |`\UF707`|...        |...     |
