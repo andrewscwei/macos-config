@@ -33,4 +33,5 @@ defaults write com.apple.Preview NSUserKeyEquivalents '{
 
 defaults write com.bitwarden.desktop NSUserKeyEquivalents '{
   "Sync vault"="@r";
+  "Export vault"="@\U000A";
 }'
