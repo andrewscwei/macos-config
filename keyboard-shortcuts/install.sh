@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-defaults write com.apple.universalaccess com.apple.custommenu.apps -array "com.apple.Music" "com.bitwarden.desktop" "com.apple.mail" "com.tinyspeck.slackmacgap" "com.apple.Preview"
+defaults write com.apple.universalaccess com.apple.custommenu.apps -array "com.apple.Music" "com.bitwarden.desktop" "com.apple.mail" "com.tinyspeck.slackmacgap" "com.apple.Preview" "com.bitwarden.desktop"
 
 defaults write com.apple.Music NSUserKeyEquivalents '{
   "Go to Current Song"="@\$j";
@@ -29,4 +29,8 @@ defaults write com.tinyspeck.slackmacgap NSUserKeyEquivalents '{
 defaults write com.apple.Preview NSUserKeyEquivalents '{
   "Adjust Size..."="~@i";
   "Export..."="\UF70F";
+}'
+
+defaults write com.bitwarden.desktop NSUserKeyEquivalents '{
+  "Sync vault"="@r";
 }'
