@@ -41,13 +41,19 @@ defaults write <bundle_identifier2> NSUserKeyEquivalents '{
 }'
 ```
 
+#### `<bundle_identifier>`
+
 To find out the `<bundle_identifier>` of an app, run the following:
 
 ```sh
 $ osascript -e 'id of app "App Name"'
 ```
 
-The `<menu_title>` is the title of the menu item exactly as it appears.
+#### `<menu_title>`
+
+The `<menu_title>` is the title of the menu item exactly as it appears. You can explicitly specify a submenu item but you must include all of its parent menu items all the way to the root. Wrap each parent menu item with `\033`, i.e. `\033View\033Group By\033Name`.
+
+### Disabling a Shortcut
 
 To disable a keyboard shortcut, assign it to the zero-width space character `\U200b`.
 
