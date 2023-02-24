@@ -2,8 +2,8 @@
 
 ## Importing Config
 
-Affinity Deisnger > Preferences... > Keyboard Shortcuts > Load
+Affinity Designer > Preferences... > Keyboard Shortcuts > Load
 
 ## Exporting Config
 
-Affinity Deisnger > Preferences... > Keyboard Shortcuts > Save
+Affinity Designer > Preferences... > Keyboard Shortcuts > Save

@@ -41,7 +41,8 @@
     "Fastfile": "ruby",
     "Appfile": "ruby",
     "Matchfile": "ruby",
-    "*.region": "html"
+    "*.region": "html",
+    "*.tfbackend": "terraform-vars"
   },
   "explorer.confirmDragAndDrop": false,
   "search.exclude": {
@@ -136,7 +137,6 @@
   "git.pullTags": false,
   "python.linting.pylintEnabled": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "diffEditor.ignoreTrimWhitespace": false,
   "editor.autoIndent": "advanced",
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.createOnPublishBranch": "never",
@@ -168,5 +168,8 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "typescript.format.semicolons": "remove",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "[python]": {
+    "editor.formatOnType": true
+  }
 }
