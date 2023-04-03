@@ -95,12 +95,24 @@
     "swift"
   ],
   "cSpell.userWords": [
-    "Keychain",
-    "UUID",
+    "autocapitalization",
+    "autocorrection",
     "configurables",
     "dealloc",
+    "Deinitializing",
+    "GHOZT",
+    "Interactor",
+    "Keychain",
     "lightbox",
-    "uncache"
+    "ltxt",
+    "Refetches",
+    "reinitialization",
+    "Styleable",
+    "Sublayer",
+    "togglable",
+    "uncache",
+    "unobserve",
+    "UUID"
   ],
   "javascript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifier": "relative",
