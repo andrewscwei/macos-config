@@ -21,7 +21,7 @@
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "breadcrumbs.filePath": "on",
   "breadcrumbs.symbolPath": "on",
