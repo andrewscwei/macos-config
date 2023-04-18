@@ -968,7 +968,7 @@
         "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
     },
     {
-        "key": "ctrl+shift+d 1",
+        "key": "shift+alt+d 1",
         "command": "extension.partialDiff.markSection1"
     },
     {
@@ -986,11 +986,15 @@
         "command": "gitlens.externalDiff"
     },
     {
-        "key": "ctrl+shift+d 2",
+        "key": "shift+alt+d 2",
         "command": "extension.partialDiff.markSection2AndTakeDiff"
     },
     {
-        "key": "ctrl+shift+d 0",
-        "command": "extension.partialDiff.diffVisibleEditors"
+        "key": "ctrl+shift+alt+down",
+        "command": "sortJSON.sortJSONReverse"
+    },
+    {
+        "key": "ctrl+shift+alt+up",
+        "command": "sortJSON.sortJSON"
     }
 ]

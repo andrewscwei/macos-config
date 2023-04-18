@@ -1,66 +1,33 @@
 {
-  "gitlens.advanced.messages": {
-    "suppressLineUncommittedWarning": true
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
-  "workbench.iconTheme": "vs-minimal",
-  "workbench.startupEditor": "newUntitledFile",
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "editor.renderWhitespace": "boundary",
-  "files.trimTrailingWhitespace": true,
-  "editor.rulers": [
-    80, 100, 120, 140, 160, 180, 200
-  ],
-  "explorer.confirmDelete": false,
-  "editor.tabSize": 2,
-  "files.exclude": {
-    "**/.cache": true,
-    "**/.classpath": true,
-    "**/.data": true,
-    "**/.DS_Store": true,
-    "**/.factorypath": true,
-    "**/.hg": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.svn": true,
-    "**/build/": true,
-    "**/CVS": true,
-    "**/dist/": true,
-    "**/node_modules/": true,
-    "package-lock.json": true
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "files.associations": {
-    "*.env.*": "dotenv",
-    "dockerfile.*": "dockerfile",
-    ".stylelintrc": "json",
-    ".tslintrc": "json",
-    "*.geojson": "json",
-    "*.strings": "swift",
-    "*.liquid": "html",
-    ".env": "shellscript",
-    "Fastfile": "ruby",
-    "Appfile": "ruby",
-    "Matchfile": "ruby",
-    "*.region": "html",
-    "*.tfbackend": "terraform-vars"
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "explorer.confirmDragAndDrop": false,
-  "search.exclude": {
-    "**/bower_components": true,
-    "**/node_modules": true,
-    "package-lock.json": true,
-    "yarn.lock": true
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "gitlens.codeLens.enabled": false,
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single",
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
   "breadcrumbs.filePath": "on",
   "breadcrumbs.symbolPath": "on",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "git.autofetch": true,
-  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?-",
-  "javascript.validate.enable": false,
+  "cSpell.enableFiletypes": [
+    "swift"
+  ],
   "cSpell.enabledLanguageIds": [
     "asciidoc",
     "c",
@@ -89,14 +56,10 @@
     "yml",
     "json"
   ],
-  "editor.dragAndDrop": false,
-  "eslint.format.enable": true,
-  "cSpell.enableFiletypes": [
-    "swift"
-  ],
   "cSpell.userWords": [
     "autocapitalization",
     "autocorrection",
+    "broccolini",
     "configurables",
     "dealloc",
     "Deinitializing",
@@ -105,83 +68,164 @@
     "Keychain",
     "lightbox",
     "ltxt",
+    "mascarpone",
     "Refetches",
     "reinitialization",
     "Styleable",
     "Sublayer",
+    "sulphites",
     "togglable",
     "uncache",
     "unobserve",
     "UUID"
   ],
-  "javascript.preferences.importModuleSpecifier": "relative",
-  "typescript.preferences.importModuleSpecifier": "relative",
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": false,
-    "strings": false
-  },
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
-  },
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
-  "workbench.editor.untitled.hint": "hidden",
-  "editor.minimap.maxColumn": 100,
-  "html.format.wrapLineLength": 0,
+  "css.validate": false,
+  "cssPeek.peekFromLanguages": [
+    "html",
+    "django-html",
+    "laravel-blade",
+    "razor",
+    "vue",
+    "blade",
+    "pug",
+    "jade",
+    "handlebars",
+    "php",
+    "twig",
+    "md",
+    "nunjucks",
+    "javascript",
+    "javascriptreact",
+    "erb",
+    "typescript",
+    "typescriptreact",
+    "HTML (Eex)",
+    "html-eex",
+    "ejs",
+    "svelte"
+  ],
+  "cssPeek.peekToExclude": [
+    "**/bower_components/**",
+    "**/node_modules/**"
+  ],
+  "editor.autoIndent": "advanced",
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.dragAndDrop": false,
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleReferences": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
-  "editor.copyWithSyntaxHighlighting": false,
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "prettier.arrowParens": "avoid",
-  "emmet.showExpandedAbbreviation": "never",
-  "editor.smoothScrolling": true,
-  "javascript.suggest.names": false,
-  "redhat.telemetry.enabled": false,
-  "editor.quickSuggestionsDelay": 500,
   "editor.hover.delay": 800,
+  "editor.minimap.enabled": false,
+  "editor.minimap.maxColumn": 100,
+  "editor.quickSuggestions": {
+    "comments": false,
+    "other": true,
+    "strings": false
+  },
+  "editor.quickSuggestionsDelay": 500,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [
+    80,
+    100,
+    120,
+    140,
+    160,
+    180,
+    200
+  ],
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?-",
+  "emmet.showExpandedAbbreviation": "never",
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.format.enable": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.env.*": "dotenv",
+    "*.geojson": "json",
+    "*.liquid": "html",
+    "*.region": "html",
+    "*.strings": "swift",
+    "*.tfbackend": "terraform-vars",
+    ".env": "shellscript",
+    ".stylelintrc": "json",
+    ".tslintrc": "json",
+    "Appfile": "ruby",
+    "Fastfile": "ruby",
+    "Matchfile": "ruby",
+    "dockerfile.*": "dockerfile"
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.cache": true,
+    "**/.classpath": true,
+    "**/.data": true,
+    "**/.factorypath": true,
+    "**/.hg": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/build/": true,
+    "**/dist/": true,
+    "**/node_modules/": true,
+    "package-lock.json": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
   "git.pullTags": false,
-  "python.linting.pylintEnabled": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.autoIndent": "advanced",
-  "githubPullRequests.pullBranch": "never",
   "githubPullRequests.createOnPublishBranch": "never",
-  "terminal.integrated.scrollback": 10000,
-  "terminal.integrated.persistentSessionScrollback": 1000,
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+  "githubPullRequests.pullBranch": "never",
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "html.completion.attributeDefaultValue": "singlequotes",
+  "gitlens.codeLens.enabled": false,
   "html.format.extraLiners": "",
   "html.format.indentInnerHtml": true,
+  "html.format.wrapLineLength": 0,
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.suggest.names": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.validate.enable": false,
+  "less.validate": false,
+  "python.linting.pylintEnabled": true,
+  "redhat.telemetry.enabled": false,
+  "scss.validate": false,
+  "search.exclude": {
+    "**/bower_components": true,
+    "**/node_modules": true,
+    "package-lock.json": true,
+    "yarn.lock": true
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "svelte.enable-ts-plugin": true,
+  "svelte.plugin.svelte.format.config.singleQuote": true,
+  "svelte.plugin.svelte.format.config.svelteIndentScriptAndStyle": false,
+  "terminal.integrated.persistentSessionScrollback": 1000,
+  "terminal.integrated.scrollback": 10000,
+  "typescript.format.semicolons": "remove",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "vs-kubernetes": {
     "vscode-kubernetes.minikube-path.mac": "/Users/mu/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
   },
-  "workbench.colorTheme": "Community Material Theme Darker",
+  "workbench.startupEditor": "newUntitledFile",
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "typescript.format.semicolons": "remove",
-  "editor.minimap.enabled": false,
-  "[python]": {
-    "editor.formatOnType": true
-  }
+  "workbench.iconTheme": "vs-minimal",
+  "workbench.colorTheme": "Community Material Theme Darker"
 }
