@@ -996,5 +996,9 @@
     {
         "key": "ctrl+shift+alt+up",
         "command": "sortJSON.sortJSON"
+    },
+    {
+        "key": "ctrl+cmd+r",
+        "command": "workbench.action.reloadWindow"
     }
 ]

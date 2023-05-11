@@ -10,12 +10,10 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search
 bindkey "^[[B" down-line-or-beginning-search
 
-# zsh-nvm
-export NVM_AUTO_USE="true"
-source ~/.zsh/zsh-nvm/zsh-nvm.plugin.zsh
-
-# zsh-autosuggestions
+# Plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Pure Prompt
 autoload -U promptinit; promptinit
@@ -38,18 +36,12 @@ source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh
 # Android Studio
 export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
 # Ruby/rbenv
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-eval "$(rbenv init - zsh)"
 
-# pyenv
-export PATH=$(pyenv root)/shims:$PATH
-eval "$(pyenv init -)"
+# asdf
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+fpath=(${ASDF_DIR}/completions $fpath)
 
 # vpm
 alias vpm=". $HOME/.vpm/vpm.sh"

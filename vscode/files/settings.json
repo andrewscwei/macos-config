@@ -2,6 +2,9 @@
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
+  "[go]": {
+    "editor.formatOnSave": false
+  },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
@@ -15,14 +18,21 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[python]": {
-    "editor.formatOnType": true
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
+  "autopep8.args": [
+    "--indent-size=2",
+    "--line-length=120"
+  ],
   "breadcrumbs.filePath": "on",
   "breadcrumbs.symbolPath": "on",
   "cSpell.enableFiletypes": [
@@ -60,24 +70,32 @@
     "autocapitalization",
     "autocorrection",
     "broccolini",
+    "bson",
     "configurables",
     "dealloc",
+    "deinit",
     "Deinitializing",
     "GHOZT",
     "Interactor",
+    "interactors",
     "Keychain",
     "lightbox",
     "ltxt",
     "mascarpone",
+    "pannable",
+    "pointable",
     "Refetches",
     "reinitialization",
+    "sendgrid",
+    "spase",
     "Styleable",
     "Sublayer",
     "sulphites",
     "togglable",
     "uncache",
     "unobserve",
-    "UUID"
+    "UUID",
+    "wordmark"
   ],
   "css.validate": false,
   "cssPeek.peekFromLanguages": [
@@ -108,6 +126,7 @@
     "**/bower_components/**",
     "**/node_modules/**"
   ],
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.autoIndent": "advanced",
   "editor.copyWithSyntaxHighlighting": false,
   "editor.dragAndDrop": false,
@@ -143,6 +162,11 @@
     "enable": true
   },
   "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "svelte"
+  ],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
@@ -187,6 +211,12 @@
     "suppressLineUncommittedWarning": true
   },
   "gitlens.codeLens.enabled": false,
+  "go.toolsEnvVars": {
+    "GO111MODULE": "on"
+  },
+  "gopls": {
+    "ui.semanticTokens": true
+  },
   "html.format.extraLiners": "",
   "html.format.indentInnerHtml": true,
   "html.format.wrapLineLength": 0,
@@ -196,6 +226,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": false,
   "less.validate": false,
+  "python.formatting.provider": "none",
   "python.linting.pylintEnabled": true,
   "redhat.telemetry.enabled": false,
   "scss.validate": false,
@@ -218,14 +249,8 @@
   "vs-kubernetes": {
     "vscode-kubernetes.minikube-path.mac": "/Users/mu/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
+  "workbench.colorTheme": "Community Material Theme Darker",
   "workbench.editor.untitled.hint": "hidden",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
-  "workbench.startupEditor": "newUntitledFile",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
   "workbench.iconTheme": "vs-minimal",
-  "workbench.colorTheme": "Community Material Theme Darker"
+  "workbench.startupEditor": "newUntitledFile"
 }

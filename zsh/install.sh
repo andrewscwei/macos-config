@@ -14,9 +14,10 @@ function get_install_dir() {
 function main() {
   assert_command "git"
 
-  rm -rf ~/.zsh/zsh-nvm && git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh/zsh-nvm
   rm -rf ~/.zsh/zsh-completions && git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh/zsh-completions
   rm -rf ~/.zsh/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+  rm -rf ~/.zsh/zsh-syntax-highlighting && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+  rm -rf ~/.zsh/zsh-autocomplete && git clone https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/zsh-autocomplete
 
   install_remote_dir "${SRC}/files" "$(get_install_dir)" "${CWD}/files"
 
