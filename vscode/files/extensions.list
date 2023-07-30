@@ -1,11 +1,12 @@
 bierner.markdown-preview-github-styles
-csstools.postcss
 dbaeumer.vscode-eslint
 eamodio.gitlens
 EditorConfig.EditorConfig
 Equinusocio.vsc-community-material-theme
+figma.figma-vscode-extension
 firefox-devtools.vscode-firefox-debug
 GitHub.codespaces
+GitHub.copilot
 github.vscode-github-actions
 GitHub.vscode-pull-request-github
 golang.go
@@ -41,3 +42,4 @@ streetsidesoftware.code-spell-checker
 styled-components.vscode-styled-components
 stylelint.vscode-stylelint
 svelte.svelte-vscode
+vunguyentuan.vscode-postcss

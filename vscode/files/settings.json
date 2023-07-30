@@ -20,11 +20,8 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  },
   "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -83,6 +80,7 @@
     "ltxt",
     "mascarpone",
     "pannable",
+    "parkade",
     "pointable",
     "Refetches",
     "reinitialization",
@@ -126,7 +124,6 @@
     "**/bower_components/**",
     "**/node_modules/**"
   ],
-  "diffEditor.ignoreTrimWhitespace": false,
   "editor.autoIndent": "advanced",
   "editor.copyWithSyntaxHighlighting": false,
   "editor.dragAndDrop": false,
@@ -165,6 +162,8 @@
   "eslint.validate": [
     "javascript",
     "javascriptreact",
+    "typescript",
+    "typescriptreact",
     "svelte"
   ],
   "explorer.confirmDelete": false,
@@ -252,5 +251,20 @@
   "workbench.colorTheme": "Community Material Theme Darker",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "vs-minimal",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.editor.enableAutoCompletions": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  }
 }
