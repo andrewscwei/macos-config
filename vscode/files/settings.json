@@ -11,6 +11,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -20,16 +23,15 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "autopep8.args": [
-    "--indent-size=2",
-    "--line-length=120"
-  ],
   "breadcrumbs.filePath": "on",
   "breadcrumbs.symbolPath": "on",
   "cSpell.enableFiletypes": [
@@ -133,6 +135,7 @@
   "editor.gotoLocation.multipleReferences": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.hover.delay": 800,
+  "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 100,
   "editor.quickSuggestions": {
@@ -153,6 +156,16 @@
   ],
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?-",
   "emmet.showExpandedAbbreviation": "never",
   "eslint.codeAction.showDocumentation": {
@@ -169,13 +182,13 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
-    "*.env.*": "dotenv",
     "*.geojson": "json",
     "*.liquid": "html",
     "*.region": "html",
     "*.strings": "swift",
     "*.tfbackend": "terraform-vars",
     ".env": "shellscript",
+    ".env*": "dotenv",
     ".stylelintrc": "json",
     ".tslintrc": "json",
     "Appfile": "ruby",
@@ -213,20 +226,26 @@
   "go.toolsEnvVars": {
     "GO111MODULE": "on"
   },
+  "go.toolsManagement.autoUpdate": true,
   "gopls": {
     "ui.semanticTokens": true
   },
   "html.format.extraLiners": "",
   "html.format.indentInnerHtml": true,
   "html.format.wrapLineLength": 0,
+  "isort.args": [
+    "--multi-line=3",
+    "--trailing-comma",
+    "--force-grid-wrap=0",
+    "--use-parentheses",
+    "--line-width=88"
+  ],
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.preferences.quoteStyle": "single",
   "javascript.suggest.names": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": false,
   "less.validate": false,
-  "python.formatting.provider": "none",
-  "python.linting.pylintEnabled": true,
   "redhat.telemetry.enabled": false,
   "scss.validate": false,
   "search.exclude": {
@@ -251,20 +270,5 @@
   "workbench.colorTheme": "Community Material Theme Darker",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "vs-minimal",
-  "workbench.startupEditor": "newUntitledFile",
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  },
-  "go.toolsManagement.autoUpdate": true,
-  "editor.inlineSuggest.enabled": true,
-  "github.copilot.editor.enableAutoCompletions": false,
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": false,
-    "scminput": false
-  }
+  "workbench.startupEditor": "newUntitledFile"
 }
