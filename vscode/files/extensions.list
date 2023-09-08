@@ -1,4 +1,5 @@
 bierner.markdown-preview-github-styles
+chunsen.bracket-select
 dbaeumer.vscode-eslint
 eamodio.gitlens
 EditorConfig.EditorConfig
@@ -11,6 +12,7 @@ golang.go
 GraphQL.vscode-graphql
 GraphQL.vscode-graphql-syntax
 hashicorp.terraform
+henriiik.vscode-sort
 mechatroner.rainbow-csv
 mongodb.mongodb-vscode
 ms-azuretools.vscode-docker
@@ -33,4 +35,5 @@ streetsidesoftware.code-spell-checker
 styled-components.vscode-styled-components
 stylelint.vscode-stylelint
 svelte.svelte-vscode
+tamasfe.even-better-toml
 vunguyentuan.vscode-postcss

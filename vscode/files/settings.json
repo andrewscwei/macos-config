@@ -188,7 +188,6 @@
     "*.strings": "swift",
     "*.tfbackend": "terraform-vars",
     ".env": "shellscript",
-    ".env*": "dotenv",
     ".stylelintrc": "json",
     ".tslintrc": "json",
     "Appfile": "ruby",
