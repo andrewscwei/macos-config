@@ -136,14 +136,13 @@
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.hover.delay": 800,
   "editor.inlineSuggest.enabled": true,
-  "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 100,
   "editor.quickSuggestions": {
     "comments": false,
     "other": true,
     "strings": false
   },
-  "editor.quickSuggestionsDelay": 500,
+  "editor.quickSuggestionsDelay": 100,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [
     80,
@@ -266,8 +265,16 @@
   "vs-kubernetes": {
     "vscode-kubernetes.minikube-path.mac": "/Users/mu/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
-  "workbench.colorTheme": "Community Material Theme Darker",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "vs-minimal",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.stickyScroll.enabled": true,
+  "editor.minimap.enabled": false,
+  "git.openRepositoryInParentFolders": "always",
+  "debug.onTaskErrors": "abort",
+  "workbench.colorTheme": "Community Material Theme Darker",
+  "workbench.colorCustomizations": {
+    "terminal.findMatchBackground": "#d53c3c"
+  },
+  "workbench.editor.empty.hint": "hidden"
 }

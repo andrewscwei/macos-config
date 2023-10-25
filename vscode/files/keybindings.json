@@ -660,10 +660,6 @@
         "when": "!editorFocus"
     },
     {
-        "key": "shift+alt+cmd+c",
-        "command": "workbench.scm.focus"
-    },
-    {
         "key": "alt+cmd+[",
         "command": "workbench.action.previousEditor"
     },
@@ -1015,11 +1011,6 @@
         "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
     },
     {
-        "key": "shift+alt+a",
-        "command": "bracket-select.undo-select",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "alt+z",
         "command": "-bracket-select.undo-select",
         "when": "editorTextFocus"
@@ -1033,5 +1024,20 @@
         "key": "shift+alt+a",
         "command": "-editor.action.blockComment",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+a",
+        "command": "bracket-select.select",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+a",
+        "command": "-bracket-select.select",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
     }
 ]
