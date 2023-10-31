@@ -259,7 +259,7 @@
   "terminal.integrated.persistentSessionScrollback": 1000,
   "terminal.integrated.scrollback": 10000,
   "typescript.format.semicolons": "remove",
-  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "shortest",
   "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vs-kubernetes": {
@@ -269,7 +269,6 @@
   "workbench.iconTheme": "vs-minimal",
   "workbench.startupEditor": "newUntitledFile",
   "editor.stickyScroll.enabled": true,
-  "editor.minimap.enabled": false,
   "git.openRepositoryInParentFolders": "always",
   "debug.onTaskErrors": "abort",
   "workbench.colorTheme": "Community Material Theme Darker",
