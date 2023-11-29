@@ -260,12 +260,12 @@
   "terminal.integrated.scrollback": 10000,
   "typescript.format.semicolons": "remove",
   "typescript.preferences.importModuleSpecifier": "shortest",
+  // "typescript.preferences.importModuleSpecifierEnding": "js",
   "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vs-kubernetes": {
     "vscode-kubernetes.minikube-path.mac": "/Users/mu/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "vs-minimal",
   "workbench.startupEditor": "newUntitledFile",
   "editor.stickyScroll.enabled": true,
