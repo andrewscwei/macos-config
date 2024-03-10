@@ -271,9 +271,12 @@
   "editor.stickyScroll.enabled": true,
   "git.openRepositoryInParentFolders": "always",
   "debug.onTaskErrors": "abort",
-  "workbench.colorTheme": "Community Material Theme Darker",
   "workbench.colorCustomizations": {
-    "terminal.findMatchBackground": "#d53c3c"
+    "terminal.findMatchBackground": "#d53c3c",
+    "editor.selectionBackground": "#d53c3c",
+    "selection.background": "#d53c3c"
   },
-  "workbench.editor.empty.hint": "hidden"
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.colorTheme": "Material Theme Darker",
+  "debug.javascript.autoAttachFilter": "smart"
 }

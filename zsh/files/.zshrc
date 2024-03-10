@@ -1,6 +1,6 @@
 # User configuration
 export FPATH="/opt/homebrew/share/zsh/site-functions:$FPATH"
-export WORDCHARS="~!#$%^&*(){}[]<>?+;-"
+export WORDCHARS="_"
 
 # Search through history with up/down arrows
 autoload -U up-line-or-beginning-search
@@ -42,6 +42,10 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 # asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
+export PATH=$PATH:$HOME/.asdf/shims
 
 # vpm
 alias vpm=". $HOME/.vpm/vpm.sh"
+
+# Go modules
+export GO111MODULE=on
