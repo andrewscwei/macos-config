@@ -264,7 +264,8 @@
   "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vs-kubernetes": {
-    "vscode-kubernetes.minikube-path.mac": "/Users/mu/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+    "vscode-kubernetes.minikube-path.mac": "/Users/mu/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vscode-kubernetes.helm-path-mac": "/Users/mu/.vs-kubernetes/tools/helm/darwin-arm64/helm"
   },
   "workbench.iconTheme": "vs-minimal",
   "workbench.startupEditor": "newUntitledFile",
@@ -277,6 +278,8 @@
     "selection.background": "#d53c3c"
   },
   "workbench.editor.empty.hint": "hidden",
-  "workbench.colorTheme": "Material Theme Darker",
-  "debug.javascript.autoAttachFilter": "smart"
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "debug.javascript.autoAttachFilter": "smart",
+  "gitlens.ai.experimental.provider": "openai",
+  "gitlens.ai.experimental.openai.model": "gpt-4-turbo-preview"
 }

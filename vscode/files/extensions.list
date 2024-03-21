@@ -2,11 +2,9 @@ bierner.markdown-preview-github-styles
 chunsen.bracket-select
 clinyong.vscode-css-modules
 dbaeumer.vscode-eslint
-donjayamanne.githistory
 eamodio.gitlens
 editorconfig.editorconfig
 equinusocio.vsc-material-theme
-equinusocio.vsc-material-theme-icons
 firefox-devtools.vscode-firefox-debug
 github.codespaces
 github.copilot
@@ -29,8 +27,6 @@ ms-python.pylint
 ms-python.python
 ms-python.vscode-pylance
 ms-vscode-remote.remote-containers
-ms-vscode.live-server
-ms-vscode.makefile-tools
 pranaygp.vscode-css-peek
 redhat.vscode-xml
 redhat.vscode-yaml
@@ -40,5 +36,4 @@ stkb.rewrap
 streetsidesoftware.code-spell-checker
 stylelint.vscode-stylelint
 svelte.svelte-vscode
-tamasfe.even-better-toml
 vunguyentuan.vscode-postcss
