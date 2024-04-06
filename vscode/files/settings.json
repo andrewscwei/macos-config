@@ -278,8 +278,9 @@
     "selection.background": "#d53c3c"
   },
   "workbench.editor.empty.hint": "hidden",
-  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "workbench.colorTheme": "Material Theme Palenight",
   "debug.javascript.autoAttachFilter": "smart",
   "gitlens.ai.experimental.provider": "openai",
-  "gitlens.ai.experimental.openai.model": "gpt-4-turbo-preview"
+  "gitlens.ai.experimental.openai.model": "gpt-4-turbo-preview",
+  "explorer.excludeGitIgnore": true
 }
