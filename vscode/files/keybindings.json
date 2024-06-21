@@ -1039,5 +1039,10 @@
         "key": "shift+cmd+c",
         "command": "-workbench.action.terminal.openNativeConsole",
         "when": "!terminalFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.output.action.clearOutput",
+        "when": "panelFocus && activePanel == 'workbench.panel.output'"
     }
 ]

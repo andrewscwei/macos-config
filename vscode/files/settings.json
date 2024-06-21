@@ -2,14 +2,11 @@
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
-  "[go]": {
-    "editor.formatOnSave": false
-  },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -31,6 +28,12 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "breadcrumbs.filePath": "on",
   "breadcrumbs.symbolPath": "on",
@@ -126,9 +129,17 @@
     "**/bower_components/**",
     "**/node_modules/**"
   ],
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
+  "debug.onTaskErrors": "abort",
   "editor.autoIndent": "advanced",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.organizeImports": "explicit"
+  },
   "editor.copyWithSyntaxHighlighting": false,
   "editor.dragAndDrop": false,
+  "editor.formatOnSave": true,
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.gotoLocation.multipleImplementations": "goto",
@@ -146,14 +157,10 @@
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [
     80,
-    100,
-    120,
-    140,
-    160,
-    180,
-    200
+    160
   ],
   "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": true,
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -178,8 +185,16 @@
     "typescriptreact",
     "svelte"
   ],
+  "evenBetterToml.formatter.allowedBlankLines": 1,
+  "evenBetterToml.formatter.arrayAutoCollapse": true,
+  "evenBetterToml.formatter.arrayAutoExpand": true,
+  "evenBetterToml.formatter.arrayTrailingComma": true,
+  "evenBetterToml.formatter.columnWidth": 160,
+  "evenBetterToml.formatter.compactArrays": false,
+  "evenBetterToml.formatter.compactEntries": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.excludeGitIgnore": true,
   "files.associations": {
     "*.geojson": "json",
     "*.liquid": "html",
@@ -187,6 +202,7 @@
     "*.strings": "swift",
     "*.tfbackend": "terraform-vars",
     ".env": "shellscript",
+    ".eslintrc": "javascript",
     ".stylelintrc": "json",
     ".tslintrc": "json",
     "Appfile": "ruby",
@@ -210,11 +226,14 @@
     "**/node_modules/": true,
     "package-lock.json": true
   },
+  "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "always",
   "git.pullTags": false,
+  "github.copilot.editor.enableAutoCompletions": true,
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.pullBranch": "never",
   "gitlens.advanced.messages": {
@@ -258,29 +277,30 @@
   "svelte.plugin.svelte.format.config.svelteIndentScriptAndStyle": false,
   "terminal.integrated.persistentSessionScrollback": 1000,
   "terminal.integrated.scrollback": 10000,
-  "typescript.format.semicolons": "remove",
+  "typescript.format.semicolons": "ignore",
   "typescript.preferences.importModuleSpecifier": "shortest",
-  // "typescript.preferences.importModuleSpecifierEnding": "js",
   "typescript.preferences.quoteStyle": "single",
+  "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vs-kubernetes": {
-    "vscode-kubernetes.minikube-path.mac": "/Users/mu/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
-    "vscode-kubernetes.helm-path-mac": "/Users/mu/.vs-kubernetes/tools/helm/darwin-arm64/helm"
+    "vscode-kubernetes.helm-path-mac": "/Users/mu/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+    "vscode-kubernetes.minikube-path.mac": "/Users/mu/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#d53c3c",
+    "selection.background": "#d53c3c",
+    "terminal.findMatchBackground": "#d53c3c80"
+  },
+  "workbench.colorTheme": "Material Theme Darker",
+  "workbench.editor.empty.hint": "hidden",
   "workbench.iconTheme": "vs-minimal",
   "workbench.startupEditor": "newUntitledFile",
-  "editor.stickyScroll.enabled": true,
-  "git.openRepositoryInParentFolders": "always",
-  "debug.onTaskErrors": "abort",
-  "workbench.colorCustomizations": {
-    "terminal.findMatchBackground": "#d53c3c",
-    "editor.selectionBackground": "#d53c3c",
-    "selection.background": "#d53c3c"
-  },
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.colorTheme": "Material Theme Palenight",
-  "debug.javascript.autoAttachFilter": "smart",
-  "gitlens.ai.experimental.provider": "openai",
-  "gitlens.ai.experimental.openai.model": "gpt-4-turbo-preview",
-  "explorer.excludeGitIgnore": true
+  "evenBetterToml.formatter.reorderArrays": true,
+  "evenBetterToml.formatter.reorderKeys": true,
+  "evenBetterToml.formatter.trailingNewline": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.languageServer": "Pylance",
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "notebook.defaultFormatter": "ms-python.black-formatter",
+  "python.analysis.completeFunctionParens": true
 }

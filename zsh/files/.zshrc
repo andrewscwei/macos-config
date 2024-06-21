@@ -49,3 +49,9 @@ alias vpm=". $HOME/.vpm/vpm.sh"
 
 # Go modules
 export GO111MODULE=on
+
+# Colima
+export DOCKER_HOST=unix://${HOME}/.colima/default/docker.sock
+
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"

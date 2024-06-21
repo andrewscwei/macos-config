@@ -6,6 +6,7 @@ dbaeumer.vscode-eslint
 eamodio.gitlens
 editorconfig.editorconfig
 equinusocio.vsc-material-theme
+esbenp.prettier-vscode
 firefox-devtools.vscode-firefox-debug
 github.codespaces
 github.copilot
@@ -21,6 +22,7 @@ mechatroner.rainbow-csv
 mongodb.mongodb-vscode
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
+ms-playwright.playwright
 ms-python.black-formatter
 ms-python.debugpy
 ms-python.isort
@@ -28,13 +30,16 @@ ms-python.pylint
 ms-python.python
 ms-python.vscode-pylance
 ms-vscode-remote.remote-containers
+ms-vscode.makefile-tools
 pranaygp.vscode-css-peek
 redhat.vscode-xml
 redhat.vscode-yaml
 richie5um2.vscode-sort-json
+rust-lang.rust-analyzer
 ryu1kn.partial-diff
 stkb.rewrap
 streetsidesoftware.code-spell-checker
 stylelint.vscode-stylelint
 svelte.svelte-vscode
+tamasfe.even-better-toml
 vunguyentuan.vscode-postcss

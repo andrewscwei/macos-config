@@ -18,7 +18,7 @@ COLOR_LIGHT_GRAY=$COLOR_PREFIX"0;37m"
 
 # Asserts that a command exists, otherwise exits with code 1.
 #
-# @param $1 - The command name.
+# @param $1 The command name.
 function assert_command() {
   if ! type "$1" > /dev/null 2>&1; then
     echo -e "${COLOR_RED}Asserting command exists... ERR: You need ${COLOR_CYAN}$1${COLOR_RED} to run the script${COLOR_RESET}"
@@ -43,7 +43,7 @@ function assert_dir() {
 
 # Ensures that a directory exists, if not creates it.
 #
-# @param $1 - The directory to ensure the existence of.
+# @param $1 The directory to ensure the existence of.
 function ensure_dir() {
   if [ ! -d "$1" ]; then
     mkdir -p "$1"
@@ -52,9 +52,9 @@ function ensure_dir() {
 
 # Exports a file to a target path.
 #
-# @param $1 - The file name.
-# @param $2 - The directory of the file.
-# @param $3 - The destination directory to export the file to.
+# @param $1 The file name.
+# @param $2 The directory of the file.
+# @param $3 The destination directory to export the file to.
 function export_file() {
   local file_name=$1
   local from_dir=$2
@@ -66,11 +66,11 @@ function export_file() {
   echo -e "Exporting ${COLOR_CYAN}${file_name}${COLOR_RESET}... OK"
 }
 
-# Copies all files from a directory to another directory. The destination directory will be
-# overwritten.
+# Copies all files from a directory to another directory. The destination
+# directory will be overwritten.
 #
-# @param $1 - The source directory to copy files from.
-# @param $2 - The destination directory to copy files to.
+# @param $1 The source directory to copy files from.
+# @param $2 The destination directory to copy files to.
 function export_dir() {
   local from_dir=$1
   local to_dir=$2
@@ -115,10 +115,10 @@ function install_remote_file() {
 
 # Downloads a directory remotely to a target path.
 #
-# @param $1 - The URL to the remote directory to download from.
-# @param $2 - The destination directory to download to.
-# @param $3 - The local equivalent directory of the remote directory (to use as a reference for
-#             scanning files in the directory).)
+# @param $1 The URL to the remote directory to download from.
+# @param $2 The destination directory to download to.
+# @param $3 The local equivalent directory of the remote directory (to use as a
+#           reference for scanning files in the directory).)
 function install_remote_dir() {
   local remote_dir=$1
   local to_dir=$2
