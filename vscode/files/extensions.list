@@ -1,5 +1,7 @@
 astro-build.astro-vscode
 bierner.markdown-preview-github-styles
+bradlc.vscode-tailwindcss
+christian-kohler.npm-intellisense
 chunsen.bracket-select
 clinyong.vscode-css-modules
 dbaeumer.vscode-eslint
@@ -30,8 +32,6 @@ ms-python.pylint
 ms-python.python
 ms-python.vscode-pylance
 ms-vscode-remote.remote-containers
-ms-vscode.makefile-tools
-pranaygp.vscode-css-peek
 redhat.vscode-xml
 redhat.vscode-yaml
 richie5um2.vscode-sort-json
@@ -42,4 +42,3 @@ streetsidesoftware.code-spell-checker
 stylelint.vscode-stylelint
 svelte.svelte-vscode
 tamasfe.even-better-toml
-vunguyentuan.vscode-postcss

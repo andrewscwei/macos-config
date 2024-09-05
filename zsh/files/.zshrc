@@ -44,9 +44,6 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 fpath=(${ASDF_DIR}/completions $fpath)
 export PATH=$PATH:$HOME/.asdf/shims
 
-# vpm
-alias vpm=". $HOME/.vpm/vpm.sh"
-
 # Go modules
 export GO111MODULE=on
 
@@ -55,3 +52,5 @@ export DOCKER_HOST=unix://${HOME}/.colima/default/docker.sock
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
+
+alias mu='. /Users/mu/.mu/mu.sh'

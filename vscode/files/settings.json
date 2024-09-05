@@ -1,4 +1,7 @@
 {
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
@@ -23,14 +26,23 @@
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
+  "[tailwindcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
@@ -100,7 +112,8 @@
     "UUID",
     "wordmark"
   ],
-  "css.validate": false,
+  "css.validate": true,
+  "cssModules.camelCase": true,
   "cssPeek.peekFromLanguages": [
     "html",
     "django-html",
@@ -157,6 +170,7 @@
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [
     80,
+    120,
     160
   ],
   "editor.smoothScrolling": true,
@@ -192,41 +206,45 @@
   "evenBetterToml.formatter.columnWidth": 160,
   "evenBetterToml.formatter.compactArrays": false,
   "evenBetterToml.formatter.compactEntries": false,
+  "evenBetterToml.formatter.reorderArrays": true,
+  "evenBetterToml.formatter.reorderKeys": true,
+  "evenBetterToml.formatter.trailingNewline": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.excludeGitIgnore": true,
   "files.associations": {
+    "*.css": "tailwindcss",
     "*.geojson": "json",
     "*.liquid": "html",
     "*.region": "html",
     "*.strings": "swift",
     "*.tfbackend": "terraform-vars",
+    ".dev.vars": "shellscript",
     ".env": "shellscript",
     ".eslintrc": "javascript",
     ".stylelintrc": "json",
     ".tslintrc": "json",
+    ".vars": "shellscript",
     "Appfile": "ruby",
     "Fastfile": "ruby",
     "Matchfile": "ruby",
     "dockerfile.*": "dockerfile"
   },
   "files.exclude": {
-    "**/.DS_Store": true,
     "**/.cache": true,
     "**/.classpath": true,
     "**/.data": true,
+    "**/.DS_Store": true,
+    "**/.env": false,
     "**/.factorypath": true,
     "**/.hg": true,
     "**/.project": true,
     "**/.settings": true,
     "**/.svn": true,
-    "**/CVS": true,
-    "**/build/": true,
-    "**/dist/": true,
-    "**/node_modules/": true,
-    "package-lock.json": true
+    "**/CVS": true
   },
   "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -263,10 +281,17 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": false,
   "less.validate": false,
+  "notebook.defaultFormatter": "ms-python.black-formatter",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.terminal.activateEnvironment": false,
+  "python.languageServer": "Pylance",
   "redhat.telemetry.enabled": false,
   "scss.validate": false,
   "search.exclude": {
+    "**/.netlify": true,
     "**/bower_components": true,
+    "**/build": true,
     "**/node_modules": true,
     "package-lock.json": true,
     "yarn.lock": true
@@ -277,8 +302,9 @@
   "svelte.plugin.svelte.format.config.svelteIndentScriptAndStyle": false,
   "terminal.integrated.persistentSessionScrollback": 1000,
   "terminal.integrated.scrollback": 10000,
-  "typescript.format.semicolons": "ignore",
-  "typescript.preferences.importModuleSpecifier": "shortest",
+  "terraform.languageServer.ignoreSingleFileWarning": true,
+  "typescript.format.semicolons": "remove",
+  "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.quoteStyle": "single",
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -295,12 +321,12 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.iconTheme": "vs-minimal",
   "workbench.startupEditor": "newUntitledFile",
-  "evenBetterToml.formatter.reorderArrays": true,
-  "evenBetterToml.formatter.reorderKeys": true,
-  "evenBetterToml.formatter.trailingNewline": true,
-  "python.analysis.autoImportCompletions": true,
-  "python.languageServer": "Pylance",
-  "editor.defaultFormatter": "ms-python.black-formatter",
-  "notebook.defaultFormatter": "ms-python.black-formatter",
-  "python.analysis.completeFunctionParens": true
+  "zenMode.centerLayout": false,
+  "zenMode.showTabs": "none",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "vscodeGitCommit.variables": {
+    "prefix": "keke"
+  },
+  "diffEditor.renderSideBySide": true,
+  "editor.minimap.enabled": false
 }
