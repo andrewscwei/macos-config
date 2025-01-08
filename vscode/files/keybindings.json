@@ -964,7 +964,7 @@
         "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
     },
     {
-        "key": "shift+alt+d 1",
+        "key": "ctrl+alt+1",
         "command": "extension.partialDiff.markSection1"
     },
     {
@@ -982,7 +982,7 @@
         "command": "gitlens.externalDiff"
     },
     {
-        "key": "shift+alt+d 2",
+        "key": "ctrl+alt+2",
         "command": "extension.partialDiff.markSection2AndTakeDiff"
     },
     {
@@ -1044,5 +1044,27 @@
         "key": "cmd+k",
         "command": "workbench.output.action.clearOutput",
         "when": "panelFocus && activePanel == 'workbench.panel.output'"
+    },
+    {
+        "key": "f5",
+        "command": "rust-analyzer.run"
+    },
+    {
+        "key": "shift+f5",
+        "command": "rust-analyzer.debug"
+    },
+    {
+        "key": "f5",
+        "command": "workbench.action.debug.continue",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.continue",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "ctrl+alt+0",
+        "command": "extension.partialDiff.diffVisibleEditors"
     }
 ]

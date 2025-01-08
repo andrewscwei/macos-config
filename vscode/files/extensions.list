@@ -1,13 +1,10 @@
-astro-build.astro-vscode
 bierner.markdown-preview-github-styles
 bradlc.vscode-tailwindcss
 christian-kohler.npm-intellisense
 chunsen.bracket-select
-clinyong.vscode-css-modules
 dbaeumer.vscode-eslint
 eamodio.gitlens
 editorconfig.editorconfig
-equinusocio.vsc-material-theme
 esbenp.prettier-vscode
 firefox-devtools.vscode-firefox-debug
 github.codespaces
@@ -20,6 +17,7 @@ graphql.vscode-graphql
 graphql.vscode-graphql-syntax
 hashicorp.terraform
 henriiik.vscode-sort
+josef.rouge-theme
 mechatroner.rainbow-csv
 mongodb.mongodb-vscode
 ms-azuretools.vscode-docker
@@ -35,10 +33,11 @@ ms-vscode-remote.remote-containers
 redhat.vscode-xml
 redhat.vscode-yaml
 richie5um2.vscode-sort-json
-rust-lang.rust-analyzer
 ryu1kn.partial-diff
 stkb.rewrap
 streetsidesoftware.code-spell-checker
 stylelint.vscode-stylelint
 svelte.svelte-vscode
 tamasfe.even-better-toml
+teabyii.ayu
+vadimcn.vscode-lldb

@@ -1,7 +1,4 @@
 {
-  "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
@@ -27,12 +24,12 @@
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[tailwindcss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[terraform]": {
-    "editor.defaultFormatter": "hashicorp.terraform"
+    "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
   },
   "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform"
   },
   "[toml]": {
@@ -94,11 +91,13 @@
     "interactors",
     "Keychain",
     "lightbox",
+    "lpath",
     "ltxt",
     "mascarpone",
     "pannable",
     "parkade",
     "pointable",
+    "proji",
     "Refetches",
     "reinitialization",
     "sendgrid",
@@ -113,37 +112,9 @@
     "wordmark"
   ],
   "css.validate": true,
-  "cssModules.camelCase": true,
-  "cssPeek.peekFromLanguages": [
-    "html",
-    "django-html",
-    "laravel-blade",
-    "razor",
-    "vue",
-    "blade",
-    "pug",
-    "jade",
-    "handlebars",
-    "php",
-    "twig",
-    "md",
-    "nunjucks",
-    "javascript",
-    "javascriptreact",
-    "erb",
-    "typescript",
-    "typescriptreact",
-    "HTML (Eex)",
-    "html-eex",
-    "ejs",
-    "svelte"
-  ],
-  "cssPeek.peekToExclude": [
-    "**/bower_components/**",
-    "**/node_modules/**"
-  ],
   "debug.javascript.autoAttachFilter": "onlyWithFlag",
   "debug.onTaskErrors": "abort",
+  "diffEditor.renderSideBySide": true,
   "editor.autoIndent": "advanced",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
@@ -211,6 +182,7 @@
   "evenBetterToml.formatter.trailingNewline": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
   "explorer.excludeGitIgnore": true,
   "files.associations": {
     "*.css": "tailwindcss",
@@ -231,10 +203,10 @@
     "dockerfile.*": "dockerfile"
   },
   "files.exclude": {
+    "**/.DS_Store": true,
     "**/.cache": true,
     "**/.classpath": true,
     "**/.data": true,
-    "**/.DS_Store": true,
     "**/.env": false,
     "**/.factorypath": true,
     "**/.hg": true,
@@ -258,6 +230,7 @@
     "suppressLineUncommittedWarning": true
   },
   "gitlens.codeLens.enabled": false,
+  "go.lintOnSave": "file",
   "go.toolsEnvVars": {
     "GO111MODULE": "on"
   },
@@ -282,10 +255,17 @@
   "javascript.validate.enable": false,
   "less.validate": false,
   "notebook.defaultFormatter": "ms-python.black-formatter",
+  "partialDiff.commandsOnContextMenu": {
+    "diffSelectionWithClipboard": false,
+    "diffVisibleEditors": false,
+    "markSection1": false,
+    "markSection2AndTakeDiff": false,
+    "togglePreComparisonTextNormalizationRules": false
+  },
   "python.analysis.autoImportCompletions": true,
   "python.analysis.completeFunctionParens": true,
-  "python.terminal.activateEnvironment": false,
   "python.languageServer": "Pylance",
+  "python.terminal.activateEnvironment": false,
   "redhat.telemetry.enabled": false,
   "scss.validate": false,
   "search.exclude": {
@@ -305,28 +285,21 @@
   "terraform.languageServer.ignoreSingleFileWarning": true,
   "typescript.format.semicolons": "remove",
   "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifierEnding": "js",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
   "typescript.preferences.quoteStyle": "single",
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vs-kubernetes": {
-    "vscode-kubernetes.helm-path-mac": "/Users/mu/.vs-kubernetes/tools/helm/darwin-arm64/helm",
-    "vscode-kubernetes.minikube-path.mac": "/Users/mu/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
-  },
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#d53c3c",
     "selection.background": "#d53c3c",
     "terminal.findMatchBackground": "#d53c3c80"
   },
-  "workbench.colorTheme": "Material Theme Darker",
+  "workbench.colorTheme": "Ayu Mirage",
   "workbench.editor.empty.hint": "hidden",
   "workbench.iconTheme": "vs-minimal",
   "workbench.startupEditor": "newUntitledFile",
   "zenMode.centerLayout": false,
   "zenMode.showTabs": "none",
-  "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "vscodeGitCommit.variables": {
-    "prefix": "keke"
-  },
-  "diffEditor.renderSideBySide": true,
-  "editor.minimap.enabled": false
+  "diffEditor.ignoreTrimWhitespace": false
 }
