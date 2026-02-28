@@ -37,7 +37,7 @@ source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh
 export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
 
 # Ruby/rbenv
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 # asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
@@ -46,6 +46,7 @@ export PATH=$PATH:$HOME/.asdf/shims
 
 # Go modules
 export GO111MODULE=on
+export ASDF_GOLANG_MOD_VERSION_ENABLED=true
 
 # Colima
 export DOCKER_HOST=unix://${HOME}/.colima/default/docker.sock
@@ -53,4 +54,10 @@ export DOCKER_HOST=unix://${HOME}/.colima/default/docker.sock
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# ngrok
+if command -v ngrok &>/dev/null; then
+  eval "$(ngrok completion)"
+fi
+
+# mu
 alias mu='. /Users/mu/.mu/mu.sh'

@@ -1066,5 +1066,18 @@
     {
         "key": "ctrl+alt+0",
         "command": "extension.partialDiff.diffVisibleEditors"
+    },
+    {
+        "key": "shift+alt+s",
+        "command": "tailwindCSS.sortSelection"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "inlineFold.toggle",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+cmd+c",
+        "command": "git.stage"
     }
 ]

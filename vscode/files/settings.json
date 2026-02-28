@@ -3,7 +3,7 @@
     "editor.defaultFormatter": "vscode.css-language-features"
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -20,20 +20,11 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  },
-  "[tailwindcss]": {
-    "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
-  },
   "[terraform-vars]": {
     "editor.defaultFormatter": "hashicorp.terraform"
   },
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform"
-  },
-  "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -41,42 +32,44 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml",
+    "editor.tabSize": 2
+  },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "breadcrumbs.filePath": "on",
   "breadcrumbs.symbolPath": "on",
-  "cSpell.enableFiletypes": [
-    "swift"
-  ],
-  "cSpell.enabledLanguageIds": [
-    "asciidoc",
-    "c",
-    "cpp",
-    "csharp",
-    "css",
-    "git-commit",
-    "go",
-    "handlebars",
-    "haskell",
-    "jade",
-    "java",
-    "latex",
-    "less",
-    "markdown",
-    "php",
-    "plaintext",
-    "pug",
-    "python",
-    "restructuredtext",
-    "rust",
-    "scala",
-    "scss",
-    "text",
-    "yaml",
-    "yml",
-    "json"
-  ],
+  "cSpell.enabledFileTypes": {
+    "asciidoc": true,
+    "c": true,
+    "cpp": true,
+    "csharp": true,
+    "css": true,
+    "git-commit": true,
+    "go": true,
+    "handlebars": true,
+    "haskell": true,
+    "jade": true,
+    "java": true,
+    "json": true,
+    "latex": true,
+    "less": true,
+    "markdown": true,
+    "php": true,
+    "plaintext": true,
+    "pug": true,
+    "python": true,
+    "restructuredtext": true,
+    "rust": true,
+    "scala": true,
+    "scss": true,
+    "swift": true,
+    "text": true,
+    "yaml": true,
+    "yml": true
+  },
   "cSpell.userWords": [
     "autocapitalization",
     "autocorrection",
@@ -90,7 +83,9 @@
     "Interactor",
     "interactors",
     "Keychain",
+    "lerp",
     "lightbox",
+    "lookbooks",
     "lpath",
     "ltxt",
     "mascarpone",
@@ -111,9 +106,11 @@
     "UUID",
     "wordmark"
   ],
+  "chat.editing.confirmEditRequestRetry": false,
   "css.validate": true,
   "debug.javascript.autoAttachFilter": "onlyWithFlag",
   "debug.onTaskErrors": "abort",
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": true,
   "editor.autoIndent": "advanced",
   "editor.codeActionsOnSave": {
@@ -123,7 +120,7 @@
   },
   "editor.copyWithSyntaxHighlighting": false,
   "editor.dragAndDrop": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.gotoLocation.multipleImplementations": "goto",
@@ -131,6 +128,7 @@
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.hover.delay": 800,
   "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 100,
   "editor.quickSuggestions": {
     "comments": false,
@@ -170,16 +168,6 @@
     "typescriptreact",
     "svelte"
   ],
-  "evenBetterToml.formatter.allowedBlankLines": 1,
-  "evenBetterToml.formatter.arrayAutoCollapse": true,
-  "evenBetterToml.formatter.arrayAutoExpand": true,
-  "evenBetterToml.formatter.arrayTrailingComma": true,
-  "evenBetterToml.formatter.columnWidth": 160,
-  "evenBetterToml.formatter.compactArrays": false,
-  "evenBetterToml.formatter.compactEntries": false,
-  "evenBetterToml.formatter.reorderArrays": true,
-  "evenBetterToml.formatter.reorderKeys": true,
-  "evenBetterToml.formatter.trailingNewline": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmPasteNative": false,
@@ -223,18 +211,21 @@
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "always",
   "git.pullTags": false,
-  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.nextEditSuggestions.enabled": false,
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.pullBranch": "never",
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
   },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "gitlens.codeLens.enabled": false,
-  "go.lintOnSave": "file",
+  "go.lintOnSave": "package",
   "go.toolsEnvVars": {
     "GO111MODULE": "on"
   },
   "go.toolsManagement.autoUpdate": true,
+  "go.useLanguageServer": true,
   "gopls": {
     "ui.semanticTokens": true
   },
@@ -254,6 +245,8 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": false,
   "less.validate": false,
+  "markdown.preview.scrollEditorWithPreview": false,
+  "markdown.preview.scrollPreviewWithEditor": false,
   "notebook.defaultFormatter": "ms-python.black-formatter",
   "partialDiff.commandsOnContextMenu": {
     "diffSelectionWithClipboard": false,
@@ -277,16 +270,20 @@
     "yarn.lock": true
   },
   "security.workspace.trust.untrustedFiles": "open",
-  "svelte.enable-ts-plugin": true,
-  "svelte.plugin.svelte.format.config.singleQuote": true,
-  "svelte.plugin.svelte.format.config.svelteIndentScriptAndStyle": false,
+  "tailwindCSS.classFunctions": [
+    "clsx",
+    "classnames",
+    "c"
+  ],
+  "tailwindCSS.colorDecorators": false,
   "terminal.integrated.persistentSessionScrollback": 1000,
   "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.stickyScroll.enabled": false,
   "terraform.languageServer.ignoreSingleFileWarning": true,
   "typescript.format.semicolons": "remove",
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifierEnding": "js",
-  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.preferences.preferTypeOnlyAutoImports": false,
   "typescript.preferences.quoteStyle": "single",
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -297,9 +294,15 @@
   },
   "workbench.colorTheme": "Ayu Mirage",
   "workbench.editor.empty.hint": "hidden",
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
   "workbench.iconTheme": "vs-minimal",
   "workbench.startupEditor": "newUntitledFile",
+  "xml.format.enforceQuoteStyle": "preferred",
+  "xml.format.spaceBeforeEmptyCloseTag": true,
+  "xml.preferences.quoteStyle": "double",
+  "xml.validation.resolveExternalEntities": true,
   "zenMode.centerLayout": false,
-  "zenMode.showTabs": "none",
-  "diffEditor.ignoreTrimWhitespace": false
+  "zenMode.showTabs": "none"
 }
