@@ -71,6 +71,7 @@
     "yml": true
   },
   "cSpell.userWords": [
+    "asynq",
     "autocapitalization",
     "autocorrection",
     "broccolini",
@@ -92,6 +93,7 @@
     "pannable",
     "parkade",
     "pointable",
+    "projekt",
     "proji",
     "Refetches",
     "reinitialization",
@@ -292,7 +294,6 @@
     "selection.background": "#d53c3c",
     "terminal.findMatchBackground": "#d53c3c80"
   },
-  "workbench.colorTheme": "Ayu Mirage",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editorAssociations": {
     "*.svg": "default"
@@ -304,5 +305,7 @@
   "xml.preferences.quoteStyle": "double",
   "xml.validation.resolveExternalEntities": true,
   "zenMode.centerLayout": false,
-  "zenMode.showTabs": "none"
+  "zenMode.showTabs": "none",
+  "workbench.colorTheme": "Ayu Mirage",
+  "chat.viewSessions.orientation": "stacked"
 }

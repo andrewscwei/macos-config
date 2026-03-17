@@ -6,7 +6,6 @@ dbaeumer.vscode-eslint
 eamodio.gitlens
 editorconfig.editorconfig
 esbenp.prettier-vscode
-firefox-devtools.vscode-firefox-debug
 github.codespaces
 github.copilot-chat
 github.vscode-github-actions
@@ -15,8 +14,6 @@ golang.go
 graphql.vscode-graphql
 graphql.vscode-graphql-syntax
 hashicorp.terraform
-llvm-vs-code-extensions.lldb-dap
-mathiasfrohlich.kotlin
 mechatroner.rainbow-csv
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
@@ -37,7 +34,5 @@ ryu1kn.partial-diff
 stkb.rewrap
 streetsidesoftware.code-spell-checker
 stylelint.vscode-stylelint
-svelte.svelte-vscode
-swiftlang.swift-vscode
 tamasfe.even-better-toml
 teabyii.ayu
