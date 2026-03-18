@@ -67,29 +67,31 @@ function agent() {
 
   local proj="${(L)${PWD##*/}// /-}"
   local tag="$proj-sandbox"
-  local extra_flags=""
-  [[ "$1" == "-s" ]] && extra_flags="--dangerously-skip-permissions"
-
   local tmpdir=$(mktemp -d)
   trap "rm -rf $tmpdir" EXIT
-
-  cat > "$tmpdir/entrypoint.sh" <<'SCRIPT'
-#!/bin/bash
-set -e
-
-CLAUDE_UID=$(id -u claude)
-CLAUDE_GID=$(id -g claude)
-
-find /workspace -maxdepth 3 -name "node_modules" -type d -exec chown $CLAUDE_UID:$CLAUDE_GID {} \;
-chown -R $CLAUDE_UID:$CLAUDE_GID /home/claude/.nvm 2>/dev/null || true
-chown -R $CLAUDE_UID:$CLAUDE_GID /home/claude/.pnpm-store 2>/dev/null || true
-
-exec gosu claude /home/claude/setup.sh "$@"
-SCRIPT
 
   cat > "$tmpdir/setup.sh" <<'SCRIPT'
 #!/bin/bash
 set -e
+
+# Root privilege phase: Fix ownership on volume-mounted directories. Named
+# volumes are created as root by Docker, so the claude user can't write to them
+# without this. Use the claude user's UID/GID (matching the host user via build
+# args) to keep file ownership consistent between the container and the
+# host-mounted workspace. Once ownership is fixed, re-exec this same script as
+# the claude user via gosu.
+if [ "$(id -u)" = "0" ]; then
+  CLAUDE_UID=$(id -u claude)
+  CLAUDE_GID=$(id -g claude)
+  find /workspace -maxdepth 3 -name "node_modules" -type d -exec chown $CLAUDE_UID:$CLAUDE_GID {} \;
+  chown -R $CLAUDE_UID:$CLAUDE_GID /home/claude/gopath 2>/dev/null || true
+  chown -R $CLAUDE_UID:$CLAUDE_GID /home/claude/.cache 2>/dev/null || true
+  chown -R $CLAUDE_UID:$CLAUDE_GID /home/claude/.nvm 2>/dev/null || true
+  chown -R $CLAUDE_UID:$CLAUDE_GID /home/claude/.pnpm-store 2>/dev/null || true
+  exec gosu claude "$0" "$@"
+fi
+
+# Project setup phase (running as claude user).
 cd /workspace
 
 # Go
@@ -134,11 +136,12 @@ if [ -f package.json ]; then
   fi
 fi
 
+# Hand off to the command passed via Docker CMD (i.e. `claude`)
 exec "$@"
 SCRIPT
 
-  cat > "$tmpdir/Dockerfile" <<'EOF'
-FROM node:22-bookworm
+  cat > "$tmpdir/Dockerfile" <<'DOCKERFILE'
+FROM node:22
 
 ARG UID=1000
 ARG GID=1000
@@ -153,16 +156,22 @@ RUN curl -fsSL https://claude.ai/install.sh | bash
 ENV PATH="/home/claude/.local/bin:${PATH}"
 
 USER root
-COPY --chown=claude:claude entrypoint.sh /home/claude/entrypoint.sh
 COPY --chown=claude:claude setup.sh /home/claude/setup.sh
-RUN chmod +x /home/claude/entrypoint.sh /home/claude/setup.sh
+RUN chmod +x /home/claude/setup.sh
 
 WORKDIR /workspace
-ENTRYPOINT ["/home/claude/entrypoint.sh"]
-EOF
+ENTRYPOINT ["/home/claude/setup.sh"]
+DOCKERFILE
 
-  docker build -q -t $tag --build-arg UID=$(id -u) --build-arg GID=$(id -g) "$tmpdir" > /dev/null 2>&1 &
+  # Build the Docker image in the background, passing UID/GID as build args for
+  # proper permissions on mounted volumes
+  docker build --progress=quiet \
+    -t $tag \
+    --build-arg UID=$(id -u) \
+    --build-arg GID=$(id -g) \
+    "$tmpdir" > /dev/null 2>&1 &
 
+  # Display loader while building
   local pid=$!
   local spin='⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏'
   while kill -0 $pid 2>/dev/null; do
@@ -174,27 +183,40 @@ EOF
   wait $pid
   printf "\r\033[K\033[32m✓\033[0m Building Claude Code sandbox \033[36m$tag\033[0m... \033[32mOK\033[0m\n"
 
-  local -a vol_args=()
-  if [ -f pnpm-lock.yaml ] || [ -f package.json ]; then
-    vol_args+=(-v "${proj}-nvm:/home/claude/.nvm")
-    vol_args+=(-v "${proj}-pnpm-store:/home/claude/.pnpm-store")
+  # Set up Docker args based on project type
+  local is_go=$([ -f go.mod ] && echo 1 || echo 0)
+  local is_node=$([ -f package.json ] && echo 1 || echo 0)
+  local -a docker_args=()
+  if (( is_go )); then
+    docker_args+=(-v "${proj}-gopath:/home/claude/gopath")
+    docker_args+=(-v "${proj}-gobuildcache:/home/claude/.cache/go-build")
+    docker_args+=(-e "GOFLAGS=-p=4")
+  fi
+  if (( is_node )); then
+    docker_args+=(-v "${proj}-nvm:/home/claude/.nvm")
+    docker_args+=(-v "${proj}-pnpm-store:/home/claude/.pnpm-store")
     for pkg in $(find . -name "package.json" -not -path "*/node_modules/*" -exec dirname {} \;); do
       local rel="${pkg#./}"
       if [ "$rel" = "." ] || [ -z "$rel" ]; then
-        vol_args+=(-v "${proj}-nm-root:/workspace/node_modules")
+        docker_args+=(-v "${proj}-nm-root:/workspace/node_modules")
       else
-        vol_args+=(-v "${proj}-nm-${rel//\//-}:/workspace/${rel}/node_modules")
+        docker_args+=(-v "${proj}-nm-${rel//\//-}:/workspace/${rel}/node_modules")
       fi
     done
   fi
 
+  # Set up Claude args
+  local claude_args=""
+  [[ "$1" == "-s" ]] && claude_args="--dangerously-skip-permissions"
+
+  # Run the container
   docker run -it --rm \
+    ${ANTHROPIC_API_KEY:+-e ANTHROPIC_API_KEY="$ANTHROPIC_API_KEY"} \
+    --network=host \
     -v "$HOME/.claude:/home/claude/.claude" \
     -v "$HOME/.claude.json:/home/claude/.claude.json" \
     -v "$(pwd):/workspace" \
-    "${vol_args[@]}" \
-    ${ANTHROPIC_API_KEY:+-e ANTHROPIC_API_KEY="$ANTHROPIC_API_KEY"} \
-    --network host \
+    "${docker_args[@]}" \
     $tag \
-    claude $extra_flags
+    claude $claude_args
 }
