@@ -65,6 +65,13 @@ alias mu='. /Users/mu/.mu/mu.sh'
 function agent() {
   setopt local_options no_monitor
 
+  local red="\033[31m"
+  local green="\033[32m"
+  local blue="\033[34m"
+  local magenta="\033[35m"
+  local cyan="\033[36m"
+  local reset="\033[0m"
+
   local proj="${(L)${PWD##*/}// /-}"
   local tag="$proj-sandbox"
   local tmpdir=$(mktemp -d)
@@ -96,43 +103,58 @@ cd /workspace
 
 # Go
 if [ -f go.mod ]; then
-  GO_VERSION=$(cat .go-version 2>/dev/null || echo "1.22.0")
+  GO_VERSION=$(cat .go-version 2>/dev/null || echo "1.26.0")
   if ! go version 2>/dev/null | grep -q "go${GO_VERSION}"; then
-    echo "Initializing Go project with version $GO_VERSION"
-    curl -fsSL "https://go.dev/dl/go${GO_VERSION}.linux-arm64.tar.gz" | tar -C /home/claude -xz
+    echo -ne "  Initializing \033[36mGo v$GO_VERSION\033[0m project..."
+    curl -fsSL "https://go.dev/dl/go${GO_VERSION}.linux-arm64.tar.gz" | tar -C /home/claude -xz > /dev/null 2>&1
     export PATH="/home/claude/go/bin:$PATH"
     export GOPATH="/home/claude/gopath"
-    go mod tidy
+    go mod tidy > /dev/null 2>&1
+    echo -e "\r\033[K\033[32m✓\033[0m Initializing \033[36mGo v$GO_VERSION\033[0m project... \033[32mOK\033[0m"
   else
+    echo -ne "  Initializing \033[36mGo\033[0m project with default version \033[36mv$GO_VERSION\033[0m..."
     export PATH="/home/claude/go/bin:$PATH"
     export GOPATH="/home/claude/gopath"
+    echo -e "\r\033[K\033[32m✓\033[0m Initializing \033[36mGo\033[0m project with default version \033[36mv$GO_VERSION\033[0m... \033[32mOK\033[0m"
   fi
 fi
 
 # Node
 if [ -f package.json ]; then
   if [ -f .node-version ]; then
-    NODE_VERSION=$(cat .node-version)
+    NODE_VERSION=$(cat .node-version 2>/dev/null || echo "22")
     export NVM_DIR="/home/claude/.nvm"
     if [ -s "$NVM_DIR/nvm.sh" ]; then
       . "$NVM_DIR/nvm.sh"
     else
-      curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+      curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash > /dev/null 2>&1
       . "$NVM_DIR/nvm.sh"
     fi
     if [ "$(node -v 2>/dev/null)" != "v${NODE_VERSION}" ]; then
-      nvm install "$NODE_VERSION"
+      nvm install "$NODE_VERSION" > /dev/null 2>&1
     fi
   fi
   if [ -f pnpm-lock.yaml ]; then
+    echo -ne "  Initializing \033[36mNode v$NODE_VERSION\033[0m project using \033[35mpnpm\033[0m..."
     export COREPACK_ENABLE_AUTO_PIN=0
     export COREPACK_ENABLE_DOWNLOAD_PROMPT=0
-    corepack enable pnpm
-    pnpm config set store-dir /home/claude/.pnpm-store
-    [ -d "node_modules/.pnpm" ] || pnpm i --force
-  elif [ -f package-lock.json ]; then npm ci
-  elif [ -f yarn.lock ]; then npm i -g yarn && yarn
-  else npm i
+    corepack enable pnpm > /dev/null 2>&1
+    pnpm config set store-dir /home/claude/.pnpm-store > /dev/null 2>&1
+    [ -d "node_modules/.pnpm" ] || pnpm i --force > /dev/null 2>&1
+    echo -e "\r\033[K\033[32m✓\033[0m Initializing \033[36mNode v$NODE_VERSION\033[0m project using \033[35mpnpm\033[0m... \033[32mOK\033[0m"
+  elif [ -f package-lock.json ]; then
+    echo -ne "  Initializing \033[36mNode v$NODE_VERSION\033[0m project using \033[35mnpm\033[0m..."
+    npm ci > /dev/null 2>&1
+    echo -e "\r\033[K\033[32m✓\033[0m Initializing \033[36mNode v$NODE_VERSION\033[0m project using \033[35mnpm\033[0m... \033[32mOK\033[0m"
+  elif [ -f yarn.lock ]; then
+    echo -ne "  Initializing \033[36mNode v$NODE_VERSION\033[0m project using \033[35myarn\033[0m..."
+    npm i -g yarn > /dev/null 2>&1
+    yarn > /dev/null 2>&1
+    echo -e "\r\033[K\033[32m✓\033[0m Initializing \033[36mNode v$NODE_VERSION\033[0m project using \033[35myarn\033[0m... \033[32mOK\033[0m"
+  else
+    echo -ne "  Initializing \033[36mNode v$NODE_VERSION\033[0m project using \033[35mnpm\033[0m..."
+    npm i > /dev/null 2>&1
+    echo -e "\r\033[K\033[32m✓\033[0m Initializing \033[36mNode v$NODE_VERSION\033[0m project using \033[35mnpm\033[0m... \033[32mOK\033[0m"
   fi
 fi
 
@@ -180,12 +202,12 @@ DOCKERFILE
   local spin='⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏'
   while kill -0 $pid 2>/dev/null; do
     for ((i=0; i<${#spin}; i++)); do
-      printf "\r\033[35m${spin:$i:1}\033[0m Building Claude Code \033[35mv$claude_version\033[0m sandbox \033[36m$tag\033[0m..."
+      printf "\r${magenta}${spin:$i:1}${reset} Building ${red}Claude Code v$claude_version${reset} sandbox ${cyan}$tag${reset}..."
       sleep 0.1
     done
   done
   wait $pid
-  printf "\r\033[K\033[32m✓\033[0m Building Claude Code \033[35mv$claude_version\033[0m sandbox \033[36m$tag\033[0m... \033[32mOK\033[0m\n"
+  printf "\r\033[K${green}✓${reset} Building ${red}Claude Code v$claude_version${reset} sandbox ${cyan}$tag${reset}... ${green}OK${reset}\n"
 
   # Set up Docker args based on project type
   local is_go=$([ -f go.mod ] && echo 1 || echo 0)
