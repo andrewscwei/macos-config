@@ -39956,7 +39956,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>949</real>
+				<real>1410</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -39969,8 +39969,10 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 				<integer>13</integer>
 				<key>Screen</key>
 				<integer>0</integer>
+				<key>Scroller Width</key>
+				<real>0.0</real>
 				<key>Selected Tab Index</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>Tabs</key>
 				<array>
 					<dict>
@@ -40933,7 +40935,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 												<real>0.93725872039794922</real>
 											</dict>
 											<key>Guid</key>
-											<string>60002069-2ECC-49BE-A50F-722B08697C53</string>
+											<string>824B392F-85B8-4976-8244-B00517D28640</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -41621,11 +41623,12 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>/Users/mu/Developer</string>
 										</dict>
 										<key>Columns</key>
-										<integer>214</integer>
+										<integer>181</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
+											<string>/Users/mu/Developer/i/iac</string>
 											<string>/Users/mu/Developer/i/iac</string>
 											<string>/Users/mu/Developer/i/iac</string>
 											<string>/Users/mu/Developer/i/iac</string>
@@ -41689,9 +41692,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>53</integer>
+										<integer>80</integer>
 										<key>Session GUID</key>
-										<string>A9F27529-9492-4FA4-956C-EEACC9ACFBA2</string>
+										<string>10040D0A-1E10-46D3-A98B-02016763DA8D</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
@@ -41713,9 +41716,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>911</real>
+										<real>1372</real>
 										<key>width</key>
-										<real>1512</real>
+										<real>1280</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -41728,9 +41731,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>911</real>
+								<real>1372</real>
 								<key>width</key>
-								<real>1512</real>
+								<real>1280</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -41756,7 +41759,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 									<array>
 										<dict>
 											<key>Is Active</key>
-											<integer>0</integer>
+											<integer>1</integer>
 											<key>Session</key>
 											<dict>
 												<key>Bookmark</key>
@@ -42707,7 +42710,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 														<real>0.93725872039794922</real>
 													</dict>
 													<key>Guid</key>
-													<string>A765ECF0-3051-4E51-AD68-2BDF82185262</string>
+													<string>9E471ADD-2F16-482C-A525-A2FAF46D3992</string>
 													<key>Horizontal Spacing</key>
 													<real>1</real>
 													<key>Idle Code</key>
@@ -43395,7 +43398,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 													<string>/Users/mu/Developer</string>
 												</dict>
 												<key>Columns</key>
-												<integer>106</integer>
+												<integer>89</integer>
 												<key>Commands</key>
 												<array/>
 												<key>Directories</key>
@@ -43533,9 +43536,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 													<string>Shell Launcher</string>
 												</dict>
 												<key>Rows</key>
-												<integer>26</integer>
+												<integer>40</integer>
 												<key>Session GUID</key>
-												<string>151B2FFA-87A1-4FF6-89B8-64C4F46E145A</string>
+												<string>A52C05B0-A198-42DB-A539-761EB5215F0F</string>
 												<key>Short Lived Single Use</key>
 												<false/>
 												<key>Should Expect Current Dir Updates</key>
@@ -43557,9 +43560,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>455</real>
+												<real>685</real>
 												<key>width</key>
-												<real>752</real>
+												<real>637</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
@@ -44519,7 +44522,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 														<real>0.93725872039794922</real>
 													</dict>
 													<key>Guid</key>
-													<string>F495EB9F-40A0-470D-AE3C-6F842616B22A</string>
+													<string>383F84C4-B307-4A53-B698-4ABF83752AF1</string>
 													<key>Horizontal Spacing</key>
 													<real>1</real>
 													<key>Idle Code</key>
@@ -45207,11 +45210,12 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 													<string>/Users/mu/Developer</string>
 												</dict>
 												<key>Columns</key>
-												<integer>106</integer>
+												<integer>89</integer>
 												<key>Commands</key>
 												<array/>
 												<key>Directories</key>
 												<array>
+													<string>/Users/mu/Developer/i/core</string>
 													<string>/Users/mu/Developer/i/core</string>
 													<string>/Users/mu/Developer/i/core</string>
 													<string>/Users/mu/Developer/i/core</string>
@@ -45251,9 +45255,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 													<string>Shell Launcher</string>
 												</dict>
 												<key>Rows</key>
-												<integer>26</integer>
+												<integer>40</integer>
 												<key>Session GUID</key>
-												<string>3DC68157-8828-4E0B-8218-F943467D50DB</string>
+												<string>6AB3D090-791C-4CA0-9171-F1B050FCEA2C</string>
 												<key>Short Lived Single Use</key>
 												<false/>
 												<key>Should Expect Current Dir Updates</key>
@@ -45275,13 +45279,13 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>455</real>
+												<real>686</real>
 												<key>width</key>
-												<real>752</real>
+												<real>637</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
-												<real>456</real>
+												<real>686</real>
 											</dict>
 										</dict>
 									</array>
@@ -45290,9 +45294,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>911</real>
+										<real>1372</real>
 										<key>width</key>
-										<real>752</real>
+										<real>637</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -45303,7 +45307,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 								</dict>
 								<dict>
 									<key>Is Active</key>
-									<integer>1</integer>
+									<integer>0</integer>
 									<key>Session</key>
 									<dict>
 										<key>Bookmark</key>
@@ -46254,7 +46258,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 												<real>0.93725872039794922</real>
 											</dict>
 											<key>Guid</key>
-											<string>0A59833A-6C5E-451C-9D51-62E1B78860C0</string>
+											<string>B120743B-558A-4E1B-9399-D19DB83986CA</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -46942,7 +46946,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>/Users/mu/Developer</string>
 										</dict>
 										<key>Columns</key>
-										<integer>107</integer>
+										<integer>90</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -47080,9 +47084,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>53</integer>
+										<integer>80</integer>
 										<key>Session GUID</key>
-										<string>8A85B8C3-47B7-4CBF-97B9-C928E052221E</string>
+										<string>0F10743E-C1AD-4E98-8484-2B83DC63BC36</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
@@ -47104,11 +47108,11 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>911</real>
+										<real>1372</real>
 										<key>width</key>
-										<real>759</real>
+										<real>642</real>
 										<key>x</key>
-										<real>753</real>
+										<real>638</real>
 										<key>y</key>
 										<real>0.0</real>
 									</dict>
@@ -47119,9 +47123,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>911</real>
+								<real>1372</real>
 								<key>width</key>
-								<real>1512</real>
+								<real>1280</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -48093,7 +48097,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 												<real>0.93725872039794922</real>
 											</dict>
 											<key>Guid</key>
-											<string>78D19E3D-C2AC-4816-B6BD-DA20137FD168</string>
+											<string>D6398B1C-C1CE-46A3-8252-4486779C9410</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -48781,7 +48785,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>/Users/mu/Developer</string>
 										</dict>
 										<key>Columns</key>
-										<integer>106</integer>
+										<integer>89</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -48919,9 +48923,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>53</integer>
+										<integer>80</integer>
 										<key>Session GUID</key>
-										<string>F890847E-2DFE-41F4-9A04-9D505B42937C</string>
+										<string>76379807-DE01-4777-9AFF-BA1146B95427</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
@@ -48943,9 +48947,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>911</real>
+										<real>1372</real>
 										<key>width</key>
-										<real>752</real>
+										<real>639</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -49905,7 +49909,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 												<real>0.93725872039794922</real>
 											</dict>
 											<key>Guid</key>
-											<string>ED40FCD3-C888-4D54-86EF-E59A3E8F2E08</string>
+											<string>15836689-015C-43FC-9CC0-E74691AD2828</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -50593,7 +50597,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>/Users/mu/Developer</string>
 										</dict>
 										<key>Columns</key>
-										<integer>107</integer>
+										<integer>90</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -50601,11 +50605,12 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>/Users/mu/Developer</string>
 											<string>/Users/mu/Developer/i/web</string>
 											<string>/Users/mu/Developer/i/web</string>
+											<string>/Users/mu/Developer/i/web</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/mu/Developer</string>
+											<string>/Users/mu/Developer/i/web</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -50634,9 +50639,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>53</integer>
+										<integer>80</integer>
 										<key>Session GUID</key>
-										<string>64E3E249-9EE9-42D9-A678-25075DCCDDF2</string>
+										<string>3D6C9655-9C62-4568-9AE7-353BE1B02BBF</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
@@ -50658,11 +50663,11 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>911</real>
+										<real>1372</real>
 										<key>width</key>
-										<real>759</real>
+										<real>640</real>
 										<key>x</key>
-										<real>753</real>
+										<real>640</real>
 										<key>y</key>
 										<real>0.0</real>
 									</dict>
@@ -50673,9 +50678,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>911</real>
+								<real>1372</real>
 								<key>width</key>
-								<real>1512</real>
+								<real>1280</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -51647,7 +51652,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 												<real>0.93725872039794922</real>
 											</dict>
 											<key>Guid</key>
-											<string>549A805A-D8FC-40A9-BB9E-2D02A05ECBE1</string>
+											<string>4E75010A-78F7-4C4A-A548-11DC4D95B785</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -52335,7 +52340,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>/Users/mu/Developer</string>
 										</dict>
 										<key>Columns</key>
-										<integer>214</integer>
+										<integer>181</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -52473,9 +52478,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>26</integer>
+										<integer>39</integer>
 										<key>Session GUID</key>
-										<string>5D91FB89-4BB4-4DD0-BBAA-63A96A380088</string>
+										<string>86766C96-CD50-49FC-8C2F-B4C0D394222D</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
@@ -52497,9 +52502,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>446</real>
+										<real>670</real>
 										<key>width</key>
-										<real>1512</real>
+										<real>1280</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -53459,7 +53464,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 												<real>0.93725872039794922</real>
 											</dict>
 											<key>Guid</key>
-											<string>D101A7B0-1EB4-4FB8-9F6B-5BF6772F2D72</string>
+											<string>48826A60-4151-4EA4-8810-D9A04AA2CFFE</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -54147,7 +54152,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>/Users/mu/Developer</string>
 										</dict>
 										<key>Columns</key>
-										<integer>214</integer>
+										<integer>181</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -54285,9 +54290,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>27</integer>
+										<integer>41</integer>
 										<key>Session GUID</key>
-										<string>4C9B1680-6B53-4622-93C9-D1DA78FF7E30</string>
+										<string>3BB8775D-2913-477B-B450-20663B55B5DA</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
@@ -54309,13 +54314,13 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>464</real>
+										<real>701</real>
 										<key>width</key>
-										<real>1512</real>
+										<real>1280</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
-										<real>447</real>
+										<real>671</real>
 									</dict>
 								</dict>
 							</array>
@@ -54324,9 +54329,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>911</real>
+								<real>1372</real>
 								<key>width</key>
-								<real>1512</real>
+								<real>1280</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -55298,7 +55303,7 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 												<real>0.93725872039794922</real>
 											</dict>
 											<key>Guid</key>
-											<string>A38B82AC-F0CF-4619-8F72-A9914F1608FE</string>
+											<string>7ECE83A9-180F-4FF4-8B65-D6C014A0C796</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -55986,12 +55991,13 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>/Users/mu/Developer</string>
 										</dict>
 										<key>Columns</key>
-										<integer>214</integer>
+										<integer>181</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
 										<array>
 											<string>/Users/mu/Developer</string>
+											<string>/Users/mu/Developer/i/brand-resources</string>
 											<string>/Users/mu/Developer/i/brand-resources</string>
 											<string>/Users/mu/Developer/i/brand-resources</string>
 											<string>/Users/mu/Developer/i/brand-resources</string>
@@ -56032,9 +56038,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>53</integer>
+										<integer>80</integer>
 										<key>Session GUID</key>
-										<string>B25277DE-BAF8-4C50-BDE6-C135950A7F3A</string>
+										<string>5B507953-0F47-40AC-A20A-8DFCCC110CBC</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
@@ -56056,9 +56062,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>911</real>
+										<real>1372</real>
 										<key>width</key>
-										<real>1512</real>
+										<real>1280</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -56071,9 +56077,9 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>911</real>
+								<real>1372</real>
 								<key>width</key>
-								<real>1512</real>
+								<real>1280</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -56116,11 +56122,11 @@ Replace Selection.Replace with Pretty-Printed JSON</string>
 				<key>Use Transparency</key>
 				<true/>
 				<key>Width</key>
-				<real>1512</real>
+				<real>1280</real>
 				<key>Window Type</key>
 				<integer>13</integer>
 				<key>X Origin</key>
-				<real>0.0</real>
+				<real>3840</real>
 				<key>Y Origin</key>
 				<real>0.0</real>
 			</dict>

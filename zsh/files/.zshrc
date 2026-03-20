@@ -145,6 +145,7 @@ FROM node:22
 
 ARG UID=1000
 ARG GID=1000
+ARG CLAUDE_VERSION=latest
 
 RUN apt-get update && apt-get install -y bash-completion jq htop curl git gosu && rm -rf /var/lib/apt/lists/*
 RUN groupadd -g $GID claude 2>/dev/null || true
@@ -152,7 +153,7 @@ RUN useradd -m -s /bin/bash -u $UID -g $GID claude
 
 USER claude
 WORKDIR /tmp
-RUN curl -fsSL https://claude.ai/install.sh | bash
+RUN curl -fsSL https://claude.ai/install.sh | bash -s -- $CLAUDE_VERSION
 ENV PATH="/home/claude/.local/bin:${PATH}"
 
 USER root
@@ -165,8 +166,11 @@ DOCKERFILE
 
   # Build the Docker image in the background, passing UID/GID as build args for
   # proper permissions on mounted volumes
+  local claude_version=$(curl -s https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/latest)
+
   docker build --progress=quiet \
     -t $tag \
+    --build-arg CLAUDE_VERSION="$claude_version" \
     --build-arg UID=$(id -u) \
     --build-arg GID=$(id -g) \
     "$tmpdir" > /dev/null 2>&1 &
@@ -176,12 +180,12 @@ DOCKERFILE
   local spin='⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏'
   while kill -0 $pid 2>/dev/null; do
     for ((i=0; i<${#spin}; i++)); do
-      printf "\r\033[35m${spin:$i:1}\033[0m Building Claude Code sandbox \033[36m$tag\033[0m..."
+      printf "\r\033[35m${spin:$i:1}\033[0m Building Claude Code \033[35mv$claude_version\033[0m sandbox \033[36m$tag\033[0m..."
       sleep 0.1
     done
   done
   wait $pid
-  printf "\r\033[K\033[32m✓\033[0m Building Claude Code sandbox \033[36m$tag\033[0m... \033[32mOK\033[0m\n"
+  printf "\r\033[K\033[32m✓\033[0m Building Claude Code \033[35mv$claude_version\033[0m sandbox \033[36m$tag\033[0m... \033[32mOK\033[0m\n"
 
   # Set up Docker args based on project type
   local is_go=$([ -f go.mod ] && echo 1 || echo 0)
