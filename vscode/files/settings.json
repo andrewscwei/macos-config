@@ -109,6 +109,7 @@
     "wordmark"
   ],
   "chat.editing.confirmEditRequestRetry": false,
+  "chat.viewSessions.orientation": "stacked",
   "css.validate": true,
   "debug.javascript.autoAttachFilter": "onlyWithFlag",
   "debug.onTaskErrors": "abort",
@@ -234,18 +235,15 @@
   "html.format.extraLiners": "",
   "html.format.indentInnerHtml": true,
   "html.format.wrapLineLength": 0,
-  "isort.args": [
-    "--multi-line=3",
-    "--trailing-comma",
-    "--force-grid-wrap=0",
-    "--use-parentheses",
-    "--line-width=88"
-  ],
-  "javascript.preferences.importModuleSpecifier": "relative",
-  "javascript.preferences.quoteStyle": "single",
-  "javascript.suggest.names": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.validate.enable": false,
+  "js/ts.format.semicolons": "remove",
+  "js/ts.preferences.importModuleSpecifier": "relative",
+  "js/ts.preferences.importModuleSpecifierEnding": "js",
+  "js/ts.preferences.preferTypeOnlyAutoImports": false,
+  "js/ts.preferences.quoteStyle": "single",
+  "js/ts.suggest.names": false,
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "js/ts.validate.enabled": true,
   "less.validate": false,
   "markdown.preview.scrollEditorWithPreview": false,
   "markdown.preview.scrollPreviewWithEditor": false,
@@ -282,18 +280,12 @@
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.stickyScroll.enabled": false,
   "terraform.languageServer.ignoreSingleFileWarning": true,
-  "typescript.format.semicolons": "remove",
-  "typescript.preferences.importModuleSpecifier": "relative",
-  "typescript.preferences.importModuleSpecifierEnding": "js",
-  "typescript.preferences.preferTypeOnlyAutoImports": false,
-  "typescript.preferences.quoteStyle": "single",
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#d53c3c",
     "selection.background": "#d53c3c",
     "terminal.findMatchBackground": "#d53c3c80"
   },
+  "workbench.colorTheme": "Ayu Mirage Bordered",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editorAssociations": {
     "*.svg": "default"
@@ -305,7 +297,5 @@
   "xml.preferences.quoteStyle": "double",
   "xml.validation.resolveExternalEntities": true,
   "zenMode.centerLayout": false,
-  "zenMode.showTabs": "none",
-  "workbench.colorTheme": "Ayu Mirage",
-  "chat.viewSessions.orientation": "stacked"
+  "zenMode.showTabs": "none"
 }
