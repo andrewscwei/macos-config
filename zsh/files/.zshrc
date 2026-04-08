@@ -232,12 +232,12 @@ DOCKERFILE
   fi
 
   # Set up Claude args
-  local claude_args=""
+  local -a claude_args=()
   while (( $# )); do
     case "$1" in
-      -s) claude_args+=" --dangerously-skip-permissions" ;;
-      -r) claude_args+=" --resume" ;;
-      *) claude_args+=" $1" ;;
+      -s) claude_args+=(--dangerously-skip-permissions) ;;
+      -r) claude_args+=(--resume) ;;
+      *)  claude_args+=("$1") ;;
     esac
     shift
   done
