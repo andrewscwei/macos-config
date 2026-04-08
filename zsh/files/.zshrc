@@ -121,18 +121,16 @@ fi
 
 # Node
 if [ -f package.json ]; then
-  if [ -f .node-version ]; then
-    NODE_VERSION=$(cat .node-version 2>/dev/null || echo "22")
-    export NVM_DIR="/home/claude/.nvm"
-    if [ -s "$NVM_DIR/nvm.sh" ]; then
-      . "$NVM_DIR/nvm.sh"
-    else
-      curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash > /dev/null 2>&1
-      . "$NVM_DIR/nvm.sh"
-    fi
-    if [ "$(node -v 2>/dev/null)" != "v${NODE_VERSION}" ]; then
-      nvm install "$NODE_VERSION" > /dev/null 2>&1
-    fi
+  NODE_VERSION=$(cat .node-version 2>/dev/null || echo "24")
+  export NVM_DIR="/home/claude/.nvm"
+  if [ -s "$NVM_DIR/nvm.sh" ]; then
+    . "$NVM_DIR/nvm.sh"
+  else
+    curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash > /dev/null 2>&1
+    . "$NVM_DIR/nvm.sh"
+  fi
+  if [ "$(node -v 2>/dev/null)" != "v${NODE_VERSION}" ]; then
+    nvm install "$NODE_VERSION" > /dev/null 2>&1
   fi
   if [ -f pnpm-lock.yaml ]; then
     echo -ne "  Initializing \033[36mNode v$NODE_VERSION\033[0m project using \033[35mpnpm\033[0m..."
@@ -163,13 +161,15 @@ exec "$@"
 SCRIPT
 
   cat > "$tmpdir/Dockerfile" <<'DOCKERFILE'
-FROM node:22
+FROM debian:trixie-slim
 
 ARG UID=1000
 ARG GID=1000
 ARG CLAUDE_VERSION=latest
 
-RUN apt-get update && apt-get install -y bash-completion jq htop curl git gosu && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+  bash bash-completion ca-certificates curl git gosu htop jq \
+  && rm -rf /var/lib/apt/lists/*
 RUN groupadd -g $GID claude 2>/dev/null || true
 RUN useradd -m -s /bin/bash -u $UID -g $GID claude
 
@@ -233,7 +233,14 @@ DOCKERFILE
 
   # Set up Claude args
   local claude_args=""
-  [[ "$1" == "-s" ]] && claude_args="--dangerously-skip-permissions"
+  while (( $# )); do
+    case "$1" in
+      -s) claude_args+=" --dangerously-skip-permissions" ;;
+      -r) claude_args+=" --resume" ;;
+      *) claude_args+=" $1" ;;
+    esac
+    shift
+  done
 
   # Run the container
   docker run -it --rm \
@@ -244,5 +251,5 @@ DOCKERFILE
     -v "$(pwd):/workspace" \
     "${docker_args[@]}" \
     $tag \
-    claude $claude_args
+    claude "${claude_args[@]}"
 }
