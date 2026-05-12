@@ -1079,5 +1079,13 @@
     {
         "key": "shift+alt+cmd+c",
         "command": "git.stage"
+    },
+    {
+        "key": "alt+cmd+0",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "alt+cmd+b",
+        "command": "-workbench.action.toggleAuxiliaryBar"
     }
 ]

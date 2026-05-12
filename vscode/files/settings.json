@@ -131,7 +131,6 @@
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.hover.delay": 800,
   "editor.inlineSuggest.enabled": true,
-  "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 100,
   "editor.quickSuggestions": {
     "comments": false,
@@ -174,6 +173,8 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmPasteNative": false,
+  "explorer.sortOrder": "default",
+  "explorer.sortOrderLexicographicOptions": "unicode",
   "explorer.excludeGitIgnore": true,
   "files.associations": {
     "*.css": "tailwindcss",
@@ -214,6 +215,11 @@
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "always",
   "git.pullTags": false,
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Use Conventional Commits format (build:, chore:, ci:, docs:, feat:, fix:, perf:, refactor:, revert:, style:, test:). Keep the subject line under 100 characters, capitilize the first word if applicable, in imperative present tense, no trailing period. If the change is non-trivial, add a blank line and a short body explaining the why, not the what. The body must be in point form, with capitalized first words, no trailing periods, in imperative present tense.",
+    }
+  ],
   "github.copilot.nextEditSuggestions.enabled": false,
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.pullBranch": "never",
@@ -297,5 +303,6 @@
   "xml.preferences.quoteStyle": "double",
   "xml.validation.resolveExternalEntities": true,
   "zenMode.centerLayout": false,
-  "zenMode.showTabs": "none"
+  "zenMode.showTabs": "none",
+  "editor.minimap.enabled": false
 }
