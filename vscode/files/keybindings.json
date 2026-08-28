@@ -1087,5 +1087,17 @@
     {
         "key": "alt+cmd+b",
         "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.formatDocument"
+    },
+    {
+        "key": "shift+alt+escape",
+        "command": "editor.action.inlineSuggest.trigger"
+    },
+    {
+        "key": "alt+cmd+u",
+        "command": "go.toggle.test.file"
     }
 ]

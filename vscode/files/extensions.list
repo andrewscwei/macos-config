@@ -12,6 +12,8 @@ golang.go
 graphql.vscode-graphql
 graphql.vscode-graphql-syntax
 hashicorp.terraform
+jetbrains.kotlin-server
+llvm-vs-code-extensions.lldb-dap
 mechatroner.rainbow-csv
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
@@ -26,5 +28,6 @@ ryu1kn.partial-diff
 stkb.rewrap
 streetsidesoftware.code-spell-checker
 stylelint.vscode-stylelint
+swiftlang.swift-vscode
 tamasfe.even-better-toml
 teabyii.ayu

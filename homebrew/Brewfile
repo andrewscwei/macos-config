@@ -1,90 +1,168 @@
 tap "getsentry/tools"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "mongodb/brew"
 tap "ngrok/ngrok"
-tap "powershell/tap"
-tap "shopify/shopify"
+# Simple, modern, secure file encryption
 brew "age"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# Generic-purpose lossless compression algorithm by Google
 brew "brotli"
+# Asynchronous DNS library
 brew "c-ares"
+# Mozilla CA certificate store
 brew "ca-certificates"
+# Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# Tool to obtain certs from Let's Encrypt and autoenable HTTPS
 brew "certbot"
+# Statistics utility to count lines of code
 brew "cloc"
+# Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
+# Filename encoding conversion tool
+brew "convmv"
+# Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Library for USB device access
 brew "libusb"
+# USB programmer
 brew "dfu-util"
+# Pack, ship and run any application as a lightweight container
 brew "docker"
+# Docker CLI plugin for extended build capabilities with BuildKit
 brew "docker-buildx"
+# Isolated development environments using Docker
 brew "docker-compose"
+# Platform keystore credential helper for Docker
 brew "docker-credential-helper"
-brew "erlang"
-brew "ffmpeg"
-brew "fonttools"
+# Image format providing lossless and lossy compression for web images
 brew "webp"
+# Programming language for highly scalable real-time systems
+brew "erlang"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Library for manipulating fonts
+brew "fonttools"
+# GitHub command-line tool
 brew "gh"
+# Quickly rewrite git repository history
 brew "git-filter-repo"
+# Git extension for versioning large files
 brew "git-lfs"
+# Alternative to top/htop
 brew "glances"
-brew "unbound"
+# OpenType text shaping engine
 brew "harfbuzz"
+# Framework for layout and rendering of i18n text
 brew "pango"
+# Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# C/C++ and Java libraries for Unicode and globalization
 brew "icu4c@76"
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
+# Regular expressions library
 brew "oniguruma"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Development kit for the Java programming language
 brew "openjdk"
+# Anti-bikeshedding Kotlin linter with built-in formatter
 brew "ktlint"
+# Kubernetes command-line interface
 brew "kubernetes-cli"
+# Multi-format archive and compression library
 brew "libarchive"
+# Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
+# Mac App Store command-line interface
 brew "mas"
+# Run a Kubernetes cluster locally
 brew "minikube"
+# Simple tool to make locally trusted development certificates
 brew "mkcert"
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# MongoDB Shell to connect, configure, query, and work with your MongoDB database
 brew "mongosh"
+# Port scanning utility for large networks
 brew "nmap"
+# Optimized BLAS library
 brew "openblas"
+# Package compiler and linker metadata toolkit
 brew "pkgconf"
+# PNG image optimizing utility
 brew "pngquant"
-brew "postgresql@14"
+# Object-relational database system
+brew "postgresql@18", link: true
+# Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
+# Pretty, minimal and fast ZSH prompt
 brew "pure"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
+# Generic machine emulator and virtualizer
 brew "qemu"
+# Rsync for cloud storage
 brew "rclone"
+# Command-line interface for Render
+brew "render"
+# Editor of encrypted files
 brew "sops"
+# Nodejs-based tool for optimizing SVG vector graphics files
 brew "svgo"
+# Tool to enforce Swift style and conventions
 brew "swiftlint"
+# OCR (Optical Character Recognition) engine
 brew "tesseract"
+# Terminal multiplexer
+brew "tmux"
+# Manage complex tmux sessions easily
+brew "tmuxinator"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Internet file retriever
 brew "wget"
+# Utilities to create and convert Web Open Font File (WOFF) files
 brew "woff2"
-brew "getsentry/tools/sentry-cli"
-brew "mongodb/brew/mongodb-database-tools"
+# 3D creation suite
 cask "blender"
+# Anthropic's official Claude AI desktop app
 cask "claude"
+# Voice and text chat software
 cask "discord"
+# Collaborative team software
 cask "figma"
-cask "gcloud-cli"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Web browser
 cask "google-chrome"
+# Client for the Google Drive storage service
 cask "google-drive"
-cask "iterm2"
+# Software for Logitech devices
 cask "logi-options+"
+# Open-source music notation software
 cask "musescore"
+# Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+# App to write, plan, collaborate, and get organised
 cask "notion"
-cask "postman"
+# VPN client focusing on security
 cask "protonvpn"
+# G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
 cask "prusaslicer"
+# Toolbox companion for QMK Firmware
 cask "qmk-toolbox"
+# Window snapping tool
 cask "rectangle-pro"
+# Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
+# Open-source code editor
 cask "visual-studio-code"
 mas "Affinity Designer 2", id: 1616831348
 mas "Affinity Photo 2", id: 1616822987
@@ -94,9 +172,7 @@ mas "Developer", id: 640199958
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Kaleidoscope", id: 1575557335
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
+mas "Pixelmator Pro", id: 6746662575
 mas "Slack", id: 803453959
 mas "Speedtest", id: 1153157709
 mas "Telegram", id: 747648890
@@ -117,6 +193,8 @@ vscode "golang.go"
 vscode "graphql.vscode-graphql"
 vscode "graphql.vscode-graphql-syntax"
 vscode "hashicorp.terraform"
+vscode "jetbrains.kotlin-server"
+vscode "llvm-vs-code-extensions.lldb-dap"
 vscode "mechatroner.rainbow-csv"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
@@ -131,6 +209,9 @@ vscode "ryu1kn.partial-diff"
 vscode "stkb.rewrap"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "stylelint.vscode-stylelint"
+vscode "swiftlang.swift-vscode"
 vscode "tamasfe.even-better-toml"
 vscode "teabyii.ayu"
-cargo "avm"
+npm "corepack"
+npm "npm-check-updates"
+npm "wrangler"

@@ -39,9 +39,8 @@ export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 # asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
-export PATH=$PATH:$HOME/.asdf/shims
+export PATH=$HOME/.asdf/shims:$PATH
 
 # Go modules
 export GO111MODULE=on
