@@ -252,7 +252,6 @@
     "selection.background": "#d53c3c",
     "terminal.findMatchBackground": "#d53c3c80"
   },
-  "workbench.colorTheme": "Ayu Mirage Bordered",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editorAssociations": {
     "*.svg": "default"
@@ -276,5 +275,6 @@
   ],
   "intellij.region": "europe",
   "intellij.dataSharing": "none",
-  "swift.disableSwiftlyInstallPrompt": true
+  "swift.disableSwiftlyInstallPrompt": true,
+  "workbench.colorTheme": "Ayu Mirage Bordered"
 }

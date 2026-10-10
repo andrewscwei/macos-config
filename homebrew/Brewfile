@@ -1,7 +1,7 @@
-tap "getsentry/tools"
-tap "hashicorp/tap"
+tap "getsentry/tools", trusted: true
+tap "hashicorp/tap", trusted: true
 tap "homebrew/bundle"
-tap "ngrok/ngrok"
+tap "ngrok/ngrok", trusted: true
 # Simple, modern, secure file encryption
 brew "age"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
@@ -13,7 +13,7 @@ brew "c-ares"
 # Mozilla CA certificate store
 brew "ca-certificates"
 # Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
+brew "openssl@3", link: true
 # Tool to obtain certs from Let's Encrypt and autoenable HTTPS
 brew "certbot"
 # Statistics utility to count lines of code
@@ -94,6 +94,8 @@ brew "openblas"
 brew "pkgconf"
 # PNG image optimizing utility
 brew "pngquant"
+# Fast, disk space efficient package manager
+brew "pnpm"
 # Object-relational database system
 brew "postgresql@18", link: true
 # Framework for managing multi-language pre-commit hooks
@@ -130,6 +132,10 @@ brew "uv"
 brew "wget"
 # Utilities to create and convert Web Open Font File (WOFF) files
 brew "woff2"
+# Little beautifier tool for xcodebuild
+brew "xcbeautify"
+# Sentry command-line client for some generic tasks
+brew "getsentry/tools/sentry-cli"
 # 3D creation suite
 cask "blender"
 # Anthropic's official Claude AI desktop app
@@ -138,6 +144,8 @@ cask "claude"
 cask "discord"
 # Collaborative team software
 cask "figma"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
@@ -212,6 +220,3 @@ vscode "stylelint.vscode-stylelint"
 vscode "swiftlang.swift-vscode"
 vscode "tamasfe.even-better-toml"
 vscode "teabyii.ayu"
-npm "corepack"
-npm "npm-check-updates"
-npm "wrangler"
