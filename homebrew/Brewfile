@@ -12,8 +12,6 @@ brew "brotli"
 brew "c-ares"
 # Mozilla CA certificate store
 brew "ca-certificates"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3", link: true
 # Tool to obtain certs from Let's Encrypt and autoenable HTTPS
 brew "certbot"
 # Statistics utility to count lines of code
@@ -90,6 +88,8 @@ brew "mongosh"
 brew "nmap"
 # Optimized BLAS library
 brew "openblas"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3", link: true
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # PNG image optimizing utility
